@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-07-20T08:21:25Z",
+  "sourceDatabase": "/data/root/data/opencode-20260717.db",
+  "sessionId": "ses_090bb739bffevzX4Zf7pBxuD16",
+  "title": "材料化学 · MACE 水体系势能面训练与验证",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/matchem",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 25,
+    "parts": 137,
+    "sessionMessages": 2,
+    "todos": 0
+  }
+}

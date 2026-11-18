@@ -1,0 +1,3 @@
+display_name: OneScience Resources
+short_description: Search OneScience datasets, models, apps, frameworks, skills, and AI primitives.
+default_prompt: Search OneScience resources for the current task and recommend the best matches with ids and rationale.

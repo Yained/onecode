@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_10346f0acffeC6AHvtobK5pHFs",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "swift-river",
+    "directory": "/data/case",
+    "title": "CFD · 魔搭 CFDBench 训练 smoke 验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782356447059,
+    "time_updated": 1782369821893,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/zhaozn1/modelscope_test",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"max\"}",
+    "cost": 0.11727194000000003,
+    "tokens_input": 167016,
+    "tokens_output": 18309,
+    "tokens_reasoning": 12085,
+    "tokens_cache_read": 5014400,
+    "tokens_cache_write": 0
+  }
+]

@@ -1,0 +1,2 @@
+[{"id":"evt_f6f449012001K0cFLj1pMZiKOD","session_id":"ses_090bb739bffevzX4Zf7pBxuD16","type":"agent-switched","time_created":1784278192145,"time_updated":1784278192219,"data":"{\"agent\":\"build\",\"time\":{\"created\":1784278192145}}"},
+{"id":"evt_f6f44909e001wgDFlhiPhSKcc4","session_id":"ses_090bb739bffevzX4Zf7pBxuD16","type":"model-switched","time_created":1784278192145,"time_updated":1784278192288,"data":"{\"model\":{\"id\":\"gpt-5.6-sol\",\"providerID\":\"onescience\",\"variant\":\"default\"},\"time\":{\"created\":1784278192145}}"}]

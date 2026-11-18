@@ -1,0 +1,6 @@
+[{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Create project directory structure for oceanmet_fusion","status":"completed","priority":"high","position":0,"time_created":1780467866255,"time_updated":1780467866255},
+{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Design and implement model architecture (encoder, fusion, decoder)","status":"completed","priority":"high","position":1,"time_created":1780467866255,"time_updated":1780467866255},
+{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Implement data pipeline (dataset, transforms) for ERA5+ocean data","status":"completed","priority":"high","position":2,"time_created":1780467866255,"time_updated":1780467866255},
+{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Implement training script with physics-informed loss","status":"completed","priority":"high","position":3,"time_created":1780467866255,"time_updated":1780467866255},
+{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Implement inference script","status":"completed","priority":"medium","position":4,"time_created":1780467866255,"time_updated":1780467866255},
+{"session_id":"ses_173de5f78ffemATonCgBtx7ECA","content":"Create config and requirements files","status":"completed","priority":"high","position":5,"time_created":1780467866255,"time_updated":1780467866255}]

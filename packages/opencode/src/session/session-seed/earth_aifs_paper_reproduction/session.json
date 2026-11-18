@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_130857560ffebRRVOorz8TBEXI",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "neon-circuit",
+    "directory": "/data/case",
+    "title": "地球科学 · AIFS 论文复现",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1781597375135,
+    "time_updated": 1781755044487,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/classic_case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.11695673900000002,
+    "tokens_input": 254553,
+    "tokens_output": 45751,
+    "tokens_reasoning": 22622,
+    "tokens_cache_read": 10233216,
+    "tokens_cache_write": 0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-23T09:22:51Z",
+  "sourceDatabase": "/data/root/data/opencode.db",
+  "sessionId": "ses_12c59a12fffe4xD0VPNsTHQ2iO",
+  "title": "CFD · RAE2822 翼型 FNO 训练流程",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/classic_case",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 56,
+    "parts": 239,
+    "sessionMessages": 2,
+    "todos": 3
+  }
+}

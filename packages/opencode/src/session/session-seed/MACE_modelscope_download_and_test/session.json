@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_09102687affe6WEyKzrDV0i5tJ",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "lucky-comet",
+    "directory": "/data/case",
+    "title": "材料化学 · 魔搭 MACE 训练 smoke 验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1784273540997,
+    "time_updated": 1784274000857,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/matchem",
+    "agent": "build",
+    "model": "{\"id\":\"gpt-5.6-sol\",\"providerID\":\"onescience\",\"variant\":\"default\"}",
+    "cost": 0.0,
+    "tokens_input": 221127,
+    "tokens_output": 6159,
+    "tokens_reasoning": 2548,
+    "tokens_cache_read": 1535488,
+    "tokens_cache_write": 0
+  }
+]

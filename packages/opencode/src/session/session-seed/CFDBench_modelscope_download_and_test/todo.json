@@ -1,0 +1,4 @@
+[{"session_id":"ses_10346f0acffeC6AHvtobK5pHFs","content":"检查数据集目录结构与 case.json 内容","status":"completed","priority":"high","position":0,"time_created":1782367263885,"time_updated":1782367263885},
+{"session_id":"ses_10346f0acffeC6AHvtobK5pHFs","content":"采样数据 npz/npy 文件检查 shape、值范围、异常值","status":"completed","priority":"high","position":1,"time_created":1782367263885,"time_updated":1782367263885},
+{"session_id":"ses_10346f0acffeC6AHvtobK5pHFs","content":"查看模型推理时使用的 label 可视化逻辑","status":"completed","priority":"medium","position":2,"time_created":1782367263885,"time_updated":1782367263885},
+{"session_id":"ses_10346f0acffeC6AHvtobK5pHFs","content":"汇总数据集合规问题与可能原因","status":"completed","priority":"medium","position":3,"time_created":1782367263885,"time_updated":1782367263885}]

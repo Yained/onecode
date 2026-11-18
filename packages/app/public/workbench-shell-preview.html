@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workbench Shell Preview</title>
+  <style>
+    html, body { margin: 0; height: 100%; }
+    .os-client-workbench {
+      --os-client-sidebar-w: 296px; --os-client-tool-w: 340px; --os-client-topbar-h: 2.6rem;
+      position: relative; display: flex; align-items: stretch; gap: .5rem; box-sizing: border-box;
+      height: 100dvh; padding: calc(var(--os-client-topbar-h) + .5rem) .5rem .5rem;
+      background: #ececec; color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; font-size: 13px;
+    }
+    .os-sidebar, .os-workspace-main, .os-client-right-sidebar {
+      min-width: 0; min-height: 0; height: 100%; border: 1px solid #e3e5e8; border-radius: 1rem;
+      background: #fff; box-shadow: 0 1px 2px rgba(15,23,42,.03), 0 18px 36px rgba(15,23,42,.05);
+    }
+    .os-sidebar { display: flex; flex: 0 0 var(--os-client-sidebar-w); flex-direction: column; background: #efefef; overflow: hidden; }
+    .os-workspace-main { flex: 1 1 auto; overflow: auto; padding: 1.1rem 1.25rem; }
+    .os-client-right-sidebar { display: grid; flex: 0 0 var(--os-client-tool-w); grid-template-rows: auto minmax(0,1fr); background: #fff; }
+    .os-client-workbench-chrome { position: absolute; top: .45rem; right: .55rem; z-index: 250; display: flex; gap: .35rem; }
+    .os-client-panel-toggle {
+      display: inline-grid; width: 2.15rem; height: 2.15rem; place-items: center; border: 0; border-radius: .75rem;
+      background: rgba(255,255,255,.9); color: #4b5563; box-shadow: 0 4px 10px rgba(15,23,42,.06); cursor: pointer;
+    }
+    .os-client-panel-toggle.is-active { background: #fff; color: #111827; }
+    .os-client-pane-toggle-icon { width: 1rem; height: 1rem; fill: currentColor; }
+    .os-client-pane-toggle-icon[data-side="left"] { transform: scaleX(-1); }
+    .os-client-pane-toggle-icon-main { opacity: .95; }
+    .os-client-pane-toggle-icon-divider { opacity: .82; }
+    .os-client-pane-toggle-icon-side { opacity: .36; }
+    .os-client-pane-resizer { width: 2px; flex: 0 0 2px; position: relative; }
+    .os-client-pane-resizer::after { content: ""; position: absolute; inset: 0; background: rgba(148,163,184,.45); }
+    .os-client-search { padding: .8rem .85rem .55rem; }
+    .os-client-search label {
+      display: flex; min-height: 2.55rem; align-items: center; gap: .55rem; border: 1px solid #e3e5e8;
+      border-radius: .85rem; background: #fff; padding-inline: .75rem;
+    }
+    .os-client-search input { flex: 1; border: 0; outline: 0; background: transparent; font: inherit; }
+    .os-sidebar-nav { display: flex; flex: 1; flex-direction: column; gap: .5rem; padding: .35rem .65rem; overflow: auto; }
+    .os-sidebar-link { display: flex; min-height: 2.35rem; align-items: center; border-radius: .75rem; padding: .45rem .55rem; color: #374151; text-decoration: none; font-weight: 700; }
+    .os-sidebar-link.is-active { background: #fff; color: #111827; border: 1px solid #e5e7eb; }
+    .os-sidebar-footer { margin-top: auto; border-top: 1px solid #e5e7eb; padding: .55rem .65rem .75rem; }
+    .os-client-right-empty { display: grid; min-height: 100%; place-content: center; justify-items: center; gap: .45rem; padding: 1.5rem; text-align: center; color: #9ca3af; }
+    .os-client-right-add-wrap { padding: .65rem .75rem .25rem; }
+  </style>
+</head>
+<body>
+  <main class="os-client-workbench">
+    <div class="os-client-workbench-chrome">
+      <button type="button" class="os-client-panel-toggle is-active" aria-label="关闭左侧栏">
+        <svg class="os-client-pane-toggle-icon" viewBox="0 0 24 24" data-side="left" data-open="true">
+          <rect class="os-client-pane-toggle-icon-main" x="4.5" y="5.5" width="7.7" height="13" rx="1.35"></rect>
+          <rect class="os-client-pane-toggle-icon-divider" x="12.15" y="5.5" width="1.15" height="13" rx="0.55"></rect>
+          <rect class="os-client-pane-toggle-icon-side" x="14.05" y="5.5" width="5.45" height="13" rx="1.35"></rect>
+        </svg>
+      </button>
+      <button type="button" class="os-client-panel-toggle is-active" aria-label="关闭右侧栏">
+        <svg class="os-client-pane-toggle-icon" viewBox="0 0 24 24" data-side="right" data-open="true">
+          <rect class="os-client-pane-toggle-icon-main" x="4.5" y="5.5" width="7.7" height="13" rx="1.35"></rect>
+          <rect class="os-client-pane-toggle-icon-divider" x="12.15" y="5.5" width="1.15" height="13" rx="0.55"></rect>
+          <rect class="os-client-pane-toggle-icon-side" x="14.05" y="5.5" width="5.45" height="13" rx="1.35"></rect>
+        </svg>
+      </button>
+    </div>
+    <aside class="os-sidebar">
+      <div class="os-client-search"><label><span>⌕</span><input placeholder="搜索对话记录" /></label></div>
+      <nav class="os-sidebar-nav">
+        <a class="os-sidebar-link is-active" href="#">能力中心</a>
+        <a class="os-sidebar-link" href="#">skills设置</a>
+      </nav>
+      <div class="os-sidebar-footer"><a class="os-sidebar-link" href="#">设置</a></div>
+    </aside>
+    <div class="os-client-pane-resizer"></div>
+    <section class="os-workspace-main">
+      <h1 style="margin:0 0 12px;font-size:1.5rem">能力中心</h1>
+      <p style="margin:0;color:#6b7280;line-height:1.6">中性灰底 + 白卡片；顶栏为面板示意按钮（非绿色块）。</p>
+    </section>
+    <div class="os-client-pane-resizer"></div>
+    <aside class="os-client-right-sidebar">
+      <div class="os-client-right-add-wrap"><button type="button">+</button></div>
+      <div class="os-client-right-empty"><strong>尚未打开页面</strong><p>从能力中心触发或打开文件后显示在这里。</p></div>
+    </aside>
+  </main>
+</body>
+</html>

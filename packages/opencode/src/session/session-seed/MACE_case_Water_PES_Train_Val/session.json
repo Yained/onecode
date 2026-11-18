@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_090bb739bffevzX4Zf7pBxuD16",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "quick-lagoon",
+    "directory": "/data/case",
+    "title": "材料化学 · MACE 水体系势能面训练与验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1784278191205,
+    "time_updated": 1784278570157,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/matchem",
+    "agent": "build",
+    "model": "{\"id\":\"gpt-5.6-sol\",\"providerID\":\"onescience\",\"variant\":\"default\"}",
+    "cost": 0.0,
+    "tokens_input": 106536,
+    "tokens_output": 6248,
+    "tokens_reasoning": 2090,
+    "tokens_cache_read": 1571328,
+    "tokens_cache_write": 0
+  }
+]

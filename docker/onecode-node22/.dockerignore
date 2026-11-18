@@ -1,0 +1,7 @@
+# local runtime/cache output
+.git
+**/.artifacts
+**/coverage
+**/.turbo
+**/.vite
+packages/opencode/dist/onecode-web/*.tgz

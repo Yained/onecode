@@ -1,0 +1,7 @@
+Resolve a catalog entry after catalog_search selection.
+
+Use part=summary for metadata, part=location for file/href/blob paths, part=contract for AI primitive contracts, part=body for descriptive payload, part=assets for linked resources.
+
+For skills, load the full SKILL.md with the skill tool after resolving location.
+
+For primitives: after you choose one from catalog_search, call part=body before implementing or running. Body includes companions (spec.md, usage.md, workflow_planning.md) that define interfaces, usage steps, and workflow planning. Do not skip body when companions are present.

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_1109c4216ffe02IxWfmOd93yyu",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "misty-river",
+    "directory": "/data/case",
+    "title": "地球科学 · FuXi 预报模型训练冒烟验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782132751849,
+    "time_updated": 1782133661700,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/classic_case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.03894265,
+    "tokens_input": 67126,
+    "tokens_output": 4353,
+    "tokens_reasoning": 2555,
+    "tokens_cache_read": 1029760,
+    "tokens_cache_write": 0
+  }
+]

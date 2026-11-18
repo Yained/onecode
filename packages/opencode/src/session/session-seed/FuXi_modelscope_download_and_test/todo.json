@@ -1,0 +1,6 @@
+[{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"下载 FuXi 模型到 modelscope/hub/models/OneScience/FuXi","status":"completed","priority":"high","position":0,"time_created":1782358934206,"time_updated":1782358934206},
+{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"探索 FuXi 仓库结构，定位训练入口与配置方式","status":"completed","priority":"high","position":1,"time_created":1782358934206,"time_updated":1782358934206},
+{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"检查 ERA5 数据集结构和内容","status":"completed","priority":"high","position":2,"time_created":1782358934206,"time_updated":1782358934206},
+{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"生成 training_config（小样本、少步数 smoke training）","status":"completed","priority":"high","position":3,"time_created":1782358934206,"time_updated":1782358934206},
+{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"执行训练并收集 training_log、checkpoint、validation_summary","status":"completed","priority":"high","position":4,"time_created":1782358934206,"time_updated":1782358934206},
+{"session_id":"ses_103251332ffelcaGi7spx1esL9","content":"汇总验收结果或列出阻塞项与补齐方案","status":"completed","priority":"medium","position":5,"time_created":1782358934206,"time_updated":1782358934206}]

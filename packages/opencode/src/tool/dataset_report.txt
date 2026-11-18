@@ -1,0 +1,12 @@
+Register a processed AI Ready dataset as an Already / trainable catalog record.
+
+Skill / agent contract uses three values:
+- name: dataset display name
+- source dir: raw input (bound via session chips; do not pass to this tool)
+- target dir: AI Ready output path written by standardization
+
+Call this tool once after writing the AI Ready data. Pass only:
+- name
+- target_dir (must already exist; relative to session cwd, absolute path, or http(s)/s3/oss/cos URI)
+
+Do not invent paths. Do not write .onescience/already.json. This tool cannot register Raw sources.

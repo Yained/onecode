@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-25T09:45:16Z",
+  "sourceDatabase": "/data/root/data/opencode.db.20260625",
+  "sessionId": "ses_103251332ffelcaGi7spx1esL9",
+  "title": "地球科学 · 魔搭 FuXi 训练 smoke 验证",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/zhaozn1/modelscope_test",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 25,
+    "parts": 114,
+    "sessionMessages": 2,
+    "todos": 6
+  }
+}

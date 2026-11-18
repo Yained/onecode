@@ -1,0 +1,116 @@
+{
+  "sessions": [
+    {
+      "folder": "CFDBench_modelscope_download_and_test",
+      "sessionId": "ses_10346f0acffeC6AHvtobK5pHFs",
+      "title": "CFD · 魔搭 CFDBench 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "ESM-2_modelscope_download_and_test",
+      "sessionId": "ses_103137ca7ffeO7q8BnYiPP3L2q",
+      "title": "生命科学 · 魔搭 ESM-2 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "FourCastNet_modelscope_download_and_test",
+      "sessionId": "ses_10336b7f1ffeL2BZqW7OT8eNMs",
+      "title": "地球科学 · 魔搭 FourCastNet 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "FuXi_modelscope_download_and_test",
+      "sessionId": "ses_103251332ffelcaGi7spx1esL9",
+      "title": "地球科学 · 魔搭 FuXi 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "MACE_case_Water_PES_Train_Val",
+      "sessionId": "ses_090bb739bffevzX4Zf7pBxuD16",
+      "title": "材料化学 · MACE 水体系势能面训练与验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "MACE_modelscope_download_and_test",
+      "sessionId": "ses_09102687affe6WEyKzrDV0i5tJ",
+      "title": "材料化学 · 魔搭 MACE 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "MatRIS_download_and_inference_verification",
+      "sessionId": "ses_090e3ee94ffeOUHq4ZepQ8DKHs",
+      "title": "材料化学 · 魔搭 MatRIS 下载与推理验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "MeshGraphNet_modelscope_download_and_test",
+      "sessionId": "ses_1037cc763ffeMfaaYQ6CQdmbrq",
+      "title": "CFD · 魔搭 MeshGraphNet 训练推理与可视化",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "ProteinMPNN_modelscope_download_and_test",
+      "sessionId": "ses_1033535eaffeFd2OKFwlyBG9bl",
+      "title": "生命科学 · 魔搭 ProteinMPNN 训练 smoke 验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "cfd_rae2822_fno_training",
+      "sessionId": "ses_12c59a12fffe4xD0VPNsTHQ2iO",
+      "title": "CFD · RAE2822 翼型 FNO 训练流程",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "earth_aifs_paper_reproduction",
+      "sessionId": "ses_130857560ffebRRVOorz8TBEXI",
+      "title": "地球科学 · AIFS 论文复现",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "earth_fuxi_forecast_training_smoke",
+      "sessionId": "ses_1109c4216ffe02IxWfmOd93yyu",
+      "title": "地球科学 · FuXi 预报模型训练冒烟验证",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "earth_fuxi_model_download_run_test",
+      "sessionId": "ses_12afd8b95ffeFdtfOOORfsnETp",
+      "title": "地球科学 · FuXi 模型下载与运行测试",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "earth_ocean_atmo_fusion_model",
+      "sessionId": "ses_173de5f78ffemATonCgBtx7ECA",
+      "title": "地球科学 · 海气融合预测模型搭建",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "earth_xihe_parallel_training_refactor",
+      "sessionId": "ses_131e650f7ffejnFYPuWmd1TBPr",
+      "title": "地球科学 · 羲和模型并行训练改造",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    },
+    {
+      "folder": "pde_ns_equation_model_benchmark",
+      "sessionId": "ses_10bffedbbffeAnlewduYPOpjBz",
+      "title": "PDE · NS 方程多模型对比评测",
+      "sourceDirectory": "/data/case",
+      "directoryRewrite": "runtime-default"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build OneCode OpenCode"
+  short_description: "Build app and opencode binary."
+  default_prompt: "Use this skill to install dependencies, build packages/app, rebuild the embedded opencode binary, start the dev server on port 8004, or troubleshoot /root/opencode/onecode build issues."

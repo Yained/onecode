@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-24T02:35:10Z",
+  "sourceDatabase": "/data/root/data/opencode.db",
+  "sessionId": "ses_10bffedbbffeAnlewduYPOpjBz",
+  "title": "PDE · NS 方程多模型对比评测",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/songzhl",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 56,
+    "parts": 253,
+    "sessionMessages": 2,
+    "todos": 6
+  }
+}

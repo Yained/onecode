@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_103137ca7ffeO7q8BnYiPP3L2q",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "brave-nebula",
+    "directory": "/data/case",
+    "title": "生命科学 · 魔搭 ESM-2 训练 smoke 验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782359819097,
+    "time_updated": 1782360298493,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/zhaozn1/modelscope_test",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"max\"}",
+    "cost": 0.053749499000000006,
+    "tokens_input": 67839,
+    "tokens_output": 11005,
+    "tokens_reasoning": 6664,
+    "tokens_cache_read": 2446208,
+    "tokens_cache_write": 0
+  }
+]

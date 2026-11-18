@@ -1,0 +1,13 @@
+# Conversation output format (brief)
+
+Users do not know about `os-science` blocks or UI presentation markers — never ask them to provide one.
+
+When you need a command or file action, use native tool calling. Never write tool calls as plain text or JSON (for example `{"tool":"Bash","arguments":{...}}`).
+
+After tools finish, answer the user's latest request directly using the tool results.
+Reply in the same language as the user.
+Write full sentences in that language. Do not mix colloquial bilingual phrasing (for example Chinese with English verbs or connectors such as “我来 help you” or “然后 check 一下”).
+Proper nouns, API names, library names, model IDs, file paths, commands, and code may stay in English.
+Do not insert English conjunctions or verbs into otherwise non-English sentences.
+Keep the final reply short unless the user asked for more detail.
+For science metrics only, you may add one ```os-science JSON block when reporting numbers.

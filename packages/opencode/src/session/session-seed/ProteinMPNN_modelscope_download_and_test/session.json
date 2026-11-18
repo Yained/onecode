@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_1033535eaffeFd2OKFwlyBG9bl",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "happy-cabin",
+    "directory": "/data/case",
+    "title": "生命科学 · 魔搭 ProteinMPNN 训练 smoke 验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782357608993,
+    "time_updated": 1782358088146,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/zhaozn1/modelscope_test",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"max\"}",
+    "cost": 0.040928193,
+    "tokens_input": 54363,
+    "tokens_output": 7973,
+    "tokens_reasoning": 4699,
+    "tokens_cache_read": 1725696,
+    "tokens_cache_write": 0
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-25T09:45:16Z",
+  "sourceDatabase": "/data/root/data/opencode.db.20260625",
+  "sessionId": "ses_1037cc763ffeMfaaYQ6CQdmbrq",
+  "title": "CFD · 魔搭 MeshGraphNet 训练推理与可视化",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/zhaozn1/modelscope_test",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 30,
+    "parts": 129,
+    "sessionMessages": 2,
+    "todos": 8
+  }
+}

@@ -1,0 +1,2 @@
+[{"id":"evt_efcc948da001nL2WJG6HZ8Rh4O","session_id":"ses_10336b7f1ffeL2BZqW7OT8eNMs","type":"agent-switched","time_created":1782357510361,"time_updated":1782357510457,"data":"{\"agent\":\"build\",\"time\":{\"created\":1782357510361}}"},
+{"id":"evt_efcc949bb001A6If6KqvjfGknr","session_id":"ses_10336b7f1ffeL2BZqW7OT8eNMs","type":"model-switched","time_created":1782357510361,"time_updated":1782357510588,"data":"{\"model\":{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"},\"time\":{\"created\":1782357510361}}"}]

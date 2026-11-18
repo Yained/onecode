@@ -1,0 +1,5 @@
+[{"session_id":"ses_1033535eaffeFd2OKFwlyBG9bl","content":"Download ProteinMPNN model from ModelScope","status":"completed","priority":"high","position":0,"time_created":1782358081146,"time_updated":1782358081146},
+{"session_id":"ses_1033535eaffeFd2OKFwlyBG9bl","content":"Explore model structure and README","status":"completed","priority":"high","position":1,"time_created":1782358081146,"time_updated":1782358081146},
+{"session_id":"ses_1033535eaffeFd2OKFwlyBG9bl","content":"Locate training entry point and configuration","status":"completed","priority":"high","position":2,"time_created":1782358081146,"time_updated":1782358081146},
+{"session_id":"ses_1033535eaffeFd2OKFwlyBG9bl","content":"Generate training_config for smoke training","status":"completed","priority":"high","position":3,"time_created":1782358081146,"time_updated":1782358081146},
+{"session_id":"ses_1033535eaffeFd2OKFwlyBG9bl","content":"Run smoke training and report results","status":"completed","priority":"high","position":4,"time_created":1782358081146,"time_updated":1782358081146}]

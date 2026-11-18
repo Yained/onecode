@@ -1,0 +1,54 @@
+<h2>Workspace Navigation Revision</h2>
+<p class="subtitle">Updated according to your note: the left navigation focuses on resource/capability categories.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Preview: /home and resource pages</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:190px 1fr;gap:14px">
+      <div class="mock-sidebar">
+        <strong>OneScience</strong><br><br>
+        首页<br>
+        代码开发 / Code<br>
+        <hr style="border:none;border-top:1px solid #d8dee8;margin:14px 0">
+        Skills<br>
+        数据集<br>
+        模型库<br>
+        应用库<br>
+        AI框架<br>
+        通用算子<br>
+        <hr style="border:none;border-top:1px solid #d8dee8;margin:14px 0">
+        案例<br>
+        文档下载<br>
+        设置
+      </div>
+      <div class="mock-content">
+        <div class="placeholder" style="height:78px">Header: search, current category, count, filters</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px">
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+          <div class="placeholder" style="height:110px">Resource Card<br>title / tags / metrics / actions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="keep-code" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Keep Code as a Left Nav Item</h3>
+      <p>Left sidebar includes “代码开发 / Code” so users can enter the reused opencode UI from the workspace.</p>
+    </div>
+  </div>
+  <div class="option" data-choice="resources-only" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Resources Only in Left Nav</h3>
+      <p>Left sidebar contains only Skills, 数据集, 模型库, 应用库, AI框架, 通用算子. Code is only entered from top nav or CTA.</p>
+    </div>
+  </div>
+</div>

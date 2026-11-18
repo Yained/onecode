@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-23T08:15:57Z",
+  "sourceDatabase": "/data/root/data/opencode/opencode.db",
+  "sessionId": "ses_131e650f7ffejnFYPuWmd1TBPr",
+  "title": "地球科学 · 羲和模型并行训练改造",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/case",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 91,
+    "parts": 419,
+    "sessionMessages": 2,
+    "todos": 6
+  }
+}

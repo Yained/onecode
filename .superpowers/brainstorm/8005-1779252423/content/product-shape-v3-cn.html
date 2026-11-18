@@ -1,0 +1,103 @@
+<h2>OneScience 产品形态 v3</h2>
+<p class="subtitle">基于你的选择：基础资源可持续补充，AI 原语是一等资产，智能体和 OneSkills 通过原语注册表调用能力。</p>
+
+<div class="mockup">
+  <div class="mockup-header">产品信息架构</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:220px 1fr;gap:16px;min-height:520px">
+      <div style="border-right:1px solid #d7dee8;padding-right:14px">
+        <div class="mock-nav" style="display:grid;gap:8px">
+          <strong>OneScience</strong>
+          <div class="placeholder">领域工作台</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">资源中心</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">AI 原语工厂</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">智能体注册表</div>
+          <div class="placeholder">代码页 / 已验证资源</div>
+          <div class="placeholder">运行记录 / 评测结果</div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:14px">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div style="border:1px solid #d7dee8;border-radius:8px;padding:12px;background:#fbfcfe">
+            <div class="label">第一层</div>
+            <h3>基础资源库</h3>
+            <p style="color:#526071">数据集、模型库、应用库、算子、已验证 OneScience 代码。</p>
+            <div class="placeholder">用户补充资源</div>
+            <div class="placeholder">平台校验来源</div>
+            <div class="placeholder">资源生成原语候选</div>
+          </div>
+          <div style="border:2px solid #2f6fed;border-radius:8px;padding:12px;background:#f5f8ff">
+            <div class="label">第二层</div>
+            <h3>AI 原语工厂</h3>
+            <p style="color:#526071">把基础资源转成可调用、可组合、可评测的智能体能力。</p>
+            <div class="placeholder">定义输入输出契约</div>
+            <div class="placeholder">绑定执行适配器</div>
+            <div class="placeholder">运行验证样例</div>
+          </div>
+          <div style="border:1px solid #d7dee8;border-radius:8px;padding:12px;background:#fbfcfe">
+            <div class="label">第三层</div>
+            <h3>智能体注册表</h3>
+            <p style="color:#526071">OneSkills 和智能体按任务意图检索、组合和调用原语。</p>
+            <div class="placeholder">按任务意图检索</div>
+            <div class="placeholder">进入工作流编排</div>
+            <div class="placeholder">追踪调用质量</div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #d7dee8;border-radius:8px;padding:14px;background:white">
+          <div class="label">原语详情页示例</div>
+          <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:16px">
+            <div>
+              <h3>GraphCast 气象预测原语</h3>
+              <p style="color:#526071">由已验证 OneScience 代码、模型资源和 ERA5 数据集资源共同生成。</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="placeholder" style="display:inline-block">领域：地球科学</span>
+                <span class="placeholder" style="display:inline-block">类型：模型运行</span>
+                <span class="placeholder" style="display:inline-block">状态：已验证</span>
+              </div>
+              <div style="margin-top:12px;display:grid;gap:8px">
+                <div class="placeholder">输入：时间范围、变量、区域、模型权重</div>
+                <div class="placeholder">输出：预测张量、指标、报告产物</div>
+                <div class="placeholder">约束：GPU/DCU 画像、数据格式、许可证</div>
+              </div>
+            </div>
+            <div>
+              <div class="label">面向智能体的调用契约</div>
+              <pre style="background:#111827;color:#dbeafe;border-radius:8px;padding:12px;white-space:pre-wrap;font-size:12px">调用原语({
+  原语: "地球科学.GraphCast.气象预测",
+  输入: { 起始时间, 预测时长, 变量列表 },
+  运行环境: { 加速卡: "GPU" }
+})</pre>
+              <div class="placeholder">可被调用：weather-workflow、runtime、coder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>推荐生命周期</h3>
+  <div class="options">
+    <div class="option" data-choice="lifecycle-cn" onclick="toggleSelect(this)">
+      <div class="letter">✓</div>
+      <div class="content">
+        <h3>基础资源 -> 候选原语 -> 待审核 -> 已验证 -> 可调用</h3>
+        <p>资源是广义目录项；原语必须补齐契约、适配器和验证样例后，才能开放给智能体和 OneSkills 调用。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>用户可以补充什么</h3>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <div class="placeholder">资源卡片</div>
+    <div class="placeholder">原语草稿</div>
+    <div class="placeholder">执行适配脚本</div>
+    <div class="placeholder">验证样例</div>
+  </div>
+  <p style="color:#526071;margin-top:10px">产品不应把所有资源自动开放为原语，而是先给出候选原语建议，再通过契约和验证流程进入智能体注册表。</p>
+</div>

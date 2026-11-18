@@ -1,0 +1,2 @@
+[{"id":"evt_f6f1c12da001vlQH1W8JqIbbcf","session_id":"ses_090e3ee94ffeOUHq4ZepQ8DKHs","type":"agent-switched","time_created":1784275538649,"time_updated":1784275538777,"data":"{\"agent\":\"build\",\"time\":{\"created\":1784275538649}}"},
+{"id":"evt_f6f1c13a7001IWLf70oUZUWelq","session_id":"ses_090e3ee94ffeOUHq4ZepQ8DKHs","type":"model-switched","time_created":1784275538649,"time_updated":1784275538856,"data":"{\"model\":{\"id\":\"hy3-free\",\"providerID\":\"opencode\",\"variant\":\"default\"},\"time\":{\"created\":1784275538649}}"}]

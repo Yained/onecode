@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-07-20T08:20:53Z",
+  "sourceDatabase": "/data/root/data/opencode-20260717.db",
+  "sessionId": "ses_09102687affe6WEyKzrDV0i5tJ",
+  "title": "材料化学 · 魔搭 MACE 训练 smoke 验证",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/matchem",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 24,
+    "parts": 130,
+    "sessionMessages": 2,
+    "todos": 0
+  }
+}

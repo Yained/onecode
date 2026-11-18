@@ -1,0 +1,2 @@
+# Isolated PDF extraction environment.
+markitdown[pdf]==0.1.7

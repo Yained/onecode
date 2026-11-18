@@ -1,0 +1,102 @@
+[data-component="science-metrics-card"] {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border-weak-base);
+  background: var(--surface-weak);
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+[data-component="science-metrics-card"][data-compact] {
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-title-row"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-header"] {
+  min-width: 0;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-title"] {
+  margin: 0;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-strong);
+  overflow-wrap: anywhere;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-status"] {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-medium);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-status"][data-status="passed"] {
+  color: var(--syntax-success);
+  background: color-mix(in srgb, var(--syntax-success) 12%, transparent);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-status"][data-status="warning"] {
+  color: var(--syntax-warning);
+  background: color-mix(in srgb, var(--syntax-warning) 12%, transparent);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-status"][data-status="failed"] {
+  color: var(--syntax-error);
+  background: color-mix(in srgb, var(--syntax-error) 12%, transparent);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-domain"],
+[data-component="science-metrics-card"] [data-slot="science-metrics-summary"] {
+  margin: 0;
+  font-size: var(--font-size-xsmall);
+  color: var(--text-weak);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-table-wrap"] {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-table"] {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-xsmall);
+  table-layout: fixed;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-table"] th,
+[data-component="science-metrics-card"] [data-slot="science-metrics-table"] td {
+  padding: 6px 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-weaker-base);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-table"] th {
+  color: var(--text-weak);
+  font-weight: var(--font-weight-medium);
+}
+
+[data-component="science-metrics-card"] [data-slot="science-metrics-unit"],
+[data-component="science-metrics-card"] [data-slot="science-metrics-delta"] {
+  color: var(--text-weak);
+}

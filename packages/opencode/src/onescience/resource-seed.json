@@ -1,0 +1,5696 @@
+[
+  {
+    "id": "seed-datasets-earth-era5",
+    "page": "datasets",
+    "title": "全球再分析",
+    "copy": "ERA5：ECMWF 全球大气陆面再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "ECMWF/C3S",
+    "size": "GRIB/NetCDF",
+    "format": "GRIB/NetCDF",
+    "href": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cmems",
+    "page": "datasets",
+    "title": "海洋多层数据",
+    "copy": "Copernicus Marine Service Global Ocean Physics：Copernicus 全球海洋多层物理再分析数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "reanalysis",
+      "forecast",
+      "global"
+    ],
+    "provider": "CMEMS",
+    "size": "NetCDF/Zarr",
+    "format": "NetCDF/Zarr",
+    "href": "https://data.marine.copernicus.eu/product-detail/GLOBAL_MULTIYEAR_PHY_001_030",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-merra2",
+    "page": "datasets",
+    "title": "NASA再分析",
+    "copy": "MERRA-2：NASA 全球大气再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "NASA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/data-access_merra-2/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-jra3q",
+    "page": "datasets",
+    "title": "长期再分析",
+    "copy": "JRA-3Q：JMA 全球长期大气再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "JMA",
+    "size": "GRIB",
+    "format": "GRIB",
+    "href": "https://search.diasjp.net/en/dataset/JRA3Q",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-jra55",
+    "page": "datasets",
+    "title": "日系再分析",
+    "copy": "JRA-55：JMA 55 年全球大气再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "JMA",
+    "size": "GRIB",
+    "format": "GRIB",
+    "href": "https://search.diasjp.net/en/dataset/JRA55",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-ncep-ncar-r1",
+    "page": "datasets",
+    "title": "经典再分析",
+    "copy": "NCEP/NCAR Reanalysis 1：NOAA 经典全球大气再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "NOAA PSL",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://psl.noaa.gov/data/gridded/data.ncep.reanalysis.html",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gfs",
+    "page": "datasets",
+    "title": "全球预报",
+    "copy": "Global Forecast System：NOAA 全球业务天气预报数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://registry.opendata.aws/noaa-gfs-bdp-pds/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gefs",
+    "page": "datasets",
+    "title": "集合预报",
+    "copy": "Global Ensemble Forecast System：NOAA 全球集合天气预报数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://registry.opendata.aws/noaa-gefs/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-hrrr",
+    "page": "datasets",
+    "title": "区域高分预报",
+    "copy": "High-Resolution Rapid Refresh：NOAA 美国区域高分辨率预报数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "regional"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://registry.opendata.aws/noaa-hrrr-pds/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-ecmwf-open-data",
+    "page": "datasets",
+    "title": "欧洲开放预报",
+    "copy": "ECMWF Open Data：ECMWF 开放业务预报产品子集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "global"
+    ],
+    "provider": "ECMWF",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://data.ecmwf.int/forecasts/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cmip6",
+    "page": "datasets",
+    "title": "气候情景",
+    "copy": "Coupled Model Intercomparison Project Phase 6：全球气候模式比较计划数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "projection",
+      "global"
+    ],
+    "provider": "WCRP",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://esgf-node.llnl.gov/search/cmip6/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-s2s",
+    "page": "datasets",
+    "title": "次季节预报",
+    "copy": "Subseasonal-to-Seasonal Prediction Database：多中心次季节到季节预测数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "forecast",
+      "global"
+    ],
+    "provider": "WWRP/WCRP",
+    "size": "GRIB",
+    "format": "GRIB",
+    "href": "https://apps.ecmwf.int/datasets/data/s2s/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cfsv2",
+    "page": "datasets",
+    "title": "季节预测",
+    "copy": "Climate Forecast System Version 2：NOAA 海气陆耦合季节预测数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "forecast",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://nomads.ncep.noaa.gov/pub/data/nccf/com/cfs/prod/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-oisst",
+    "page": "datasets",
+    "title": "海表温度",
+    "copy": "Optimum Interpolation Sea Surface Temperature：NOAA 全球海表温度融合数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "observation",
+      "satellite",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-argo-gdac",
+    "page": "datasets",
+    "title": "海洋剖面",
+    "copy": "Argo GDAC：全球 Argo 海洋剖面观测数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "observation",
+      "global"
+    ],
+    "provider": "Argo",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://data-argo.ifremer.fr/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-wod",
+    "page": "datasets",
+    "title": "海洋观测库",
+    "copy": "World Ocean Database：NOAA 全球海洋原位观测数据库",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "observation",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://www.ncei.noaa.gov/products/world-ocean-database",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-hycom-gofs",
+    "page": "datasets",
+    "title": "海洋预报",
+    "copy": "HYCOM Global Ocean Forecast System：HYCOM 全球海洋分析与预报数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "forecast",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "HYCOM",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://tds.hycom.org/thredds/catalog.html",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gpm-imerg",
+    "page": "datasets",
+    "title": "卫星降水",
+    "copy": "Integrated Multi-satellitE Retrievals for GPM：NASA 全球多卫星降水反演数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "satellite",
+      "observation",
+      "global"
+    ],
+    "provider": "NASA/JAXA",
+    "size": "HDF5/NetCDF",
+    "format": "HDF5/NetCDF",
+    "href": "https://disc.gsfc.nasa.gov/datasets?keywords=IMERG",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-chirps",
+    "page": "datasets",
+    "title": "陆地降水",
+    "copy": "Climate Hazards InfraRed Precipitation with Station data：长时序全球陆地降水融合数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "observation",
+      "climate",
+      "global"
+    ],
+    "provider": "CHC",
+    "size": "GeoTIFF/NetCDF",
+    "format": "GeoTIFF/NetCDF",
+    "href": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gldas",
+    "page": "datasets",
+    "title": "陆面同化",
+    "copy": "Global Land Data Assimilation System：NASA 全球陆面同化数据集",
+    "tags": [
+      "地球科学",
+      "land",
+      "hydrology",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "NASA",
+    "size": "NetCDF/GeoTIFF/KMZ",
+    "format": "NetCDF/GeoTIFF/KMZ",
+    "href": "https://disc.gsfc.nasa.gov/datasets?keywords=GLDAS",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-smap",
+    "page": "datasets",
+    "title": "土壤湿度",
+    "copy": "Soil Moisture Active Passive：NASA 全球土壤湿度卫星观测数据集",
+    "tags": [
+      "地球科学",
+      "land",
+      "hydrology",
+      "satellite",
+      "observation"
+    ],
+    "provider": "NASA/JPL",
+    "size": "HDF5/NetCDF",
+    "format": "HDF5/NetCDF",
+    "href": "https://podaac.jpl.nasa.gov/SMAP",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-grace-fo",
+    "page": "datasets",
+    "title": "陆水储量",
+    "copy": "GRACE/GRACE-FO Mascon：全球陆水储量与质量变化数据集",
+    "tags": [
+      "地球科学",
+      "hydrology",
+      "satellite",
+      "observation",
+      "global"
+    ],
+    "provider": "NASA/JPL",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://podaac.jpl.nasa.gov/GRACE-FO",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-nexrad-level2",
+    "page": "datasets",
+    "title": "天气雷达",
+    "copy": "NEXRAD Level II：NOAA 美国天气雷达基数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "radar",
+      "observation",
+      "regional"
+    ],
+    "provider": "NOAA",
+    "size": "Archive-II",
+    "format": "Archive-II",
+    "href": "https://github.com/awslabs/open-data-docs/tree/main/docs/noaa/noaa-nexrad",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-mrms",
+    "page": "datasets",
+    "title": "雷达融合",
+    "copy": "Multi-Radar Multi-Sensor System：NOAA 多雷达多传感器融合数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "radar",
+      "observation",
+      "regional"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://mrms.ncep.noaa.gov/data/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-goes-abi",
+    "page": "datasets",
+    "title": "静止卫星",
+    "copy": "GOES-R Advanced Baseline Imager：NOAA 静止气象卫星多通道观测数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "satellite",
+      "remote-sensing",
+      "observation"
+    ],
+    "provider": "NOAA/NASA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://registry.opendata.aws/noaa-goes/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-himawari-ahi",
+    "page": "datasets",
+    "title": "亚太卫星",
+    "copy": "Himawari Advanced Himawari Imager：JMA 亚太静止气象卫星观测数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "satellite",
+      "remote-sensing",
+      "observation"
+    ],
+    "provider": "JMA",
+    "size": "HSD/NetCDF",
+    "format": "HSD/NetCDF",
+    "href": "https://www.eorc.jaxa.jp/ptree/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-modis",
+    "page": "datasets",
+    "title": "MODIS 多光谱遥感",
+    "copy": "Moderate Resolution Imaging Spectroradiometer：NASA 多光谱地球观测遥感数据集",
+    "tags": [
+      "地球科学",
+      "remote-sensing",
+      "satellite",
+      "land",
+      "ocean"
+    ],
+    "provider": "NASA",
+    "size": "HDF/NetCDF",
+    "format": "HDF/NetCDF",
+    "href": "https://search.earthdata.nasa.gov/search",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-landsat-c2",
+    "page": "datasets",
+    "title": "陆表遥感",
+    "copy": "Landsat Collection 2：USGS Landsat 全球陆表遥感数据集",
+    "tags": [
+      "地球科学",
+      "remote-sensing",
+      "satellite",
+      "land",
+      "observation"
+    ],
+    "provider": "USGS/NASA",
+    "size": "GeoTIFF/COG",
+    "format": "GeoTIFF/COG",
+    "href": "https://www.usgs.gov/data/landsat-89-long-term-acquisition-plan-earths-continental-landmasses-and-near-shore-coastal",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-noaa-20cr",
+    "page": "datasets",
+    "title": "百年再分析",
+    "copy": "NOAA-CIRES-DOE 20th Century Reanalysis：NOAA 长时段全球大气再分析数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "reanalysis",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://psl.noaa.gov/data/gridded/reanalysis/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cerra",
+    "page": "datasets",
+    "title": "欧洲区域再分析",
+    "copy": "Copernicus European Regional Reanalysis：Copernicus 欧洲高分辨率区域再分析数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "reanalysis",
+      "regional"
+    ],
+    "provider": "C3S",
+    "size": "GRIB/NetCDF",
+    "format": "GRIB/NetCDF",
+    "href": "https://cds.climate.copernicus.eu/datasets/reanalysis-cerra-single-levels",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cams-global-atmosphere",
+    "page": "datasets",
+    "title": "大气成分预报",
+    "copy": "CAMS Global Atmospheric Composition Forecasts：Copernicus 全球气溶胶与化学成分预报数据集",
+    "tags": [
+      "地球科学",
+      "atmosphere",
+      "forecast",
+      "air-quality",
+      "global"
+    ],
+    "provider": "ECMWF/CAMS",
+    "size": "GRIB/NetCDF",
+    "format": "GRIB/NetCDF",
+    "href": "https://ads.atmosphere.copernicus.eu/datasets/cams-global-atmospheric-composition-forecasts",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cfsr",
+    "page": "datasets",
+    "title": "耦合再分析",
+    "copy": "Climate Forecast System Reanalysis：NOAA 海气陆冰耦合气候再分析数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "reanalysis",
+      "forecast",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://www.ncei.noaa.gov/products/weather-climate-models/climate-forecast-system",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-nam",
+    "page": "datasets",
+    "title": "北美中尺度",
+    "copy": "North American Mesoscale Forecast System：NOAA 北美中尺度业务天气预报数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "regional"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://www.nco.ncep.noaa.gov/pmb/products/nam/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-rap",
+    "page": "datasets",
+    "title": "快速更新预报",
+    "copy": "Rapid Refresh：NOAA 北美逐小时快速更新分析预报数据集",
+    "tags": [
+      "地球科学",
+      "weather",
+      "forecast",
+      "regional"
+    ],
+    "provider": "NOAA",
+    "size": "GRIB2",
+    "format": "GRIB2",
+    "href": "https://www.ncei.noaa.gov/products/weather-climate-models/rapid-refresh-update",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-mur-sst",
+    "page": "datasets",
+    "title": "高分海温",
+    "copy": "Multi-scale Ultra-high Resolution Sea Surface Temperature：NASA JPL 全球高分辨率海表温度数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "satellite",
+      "observation",
+      "global"
+    ],
+    "provider": "NASA/JPL",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://podaac.jpl.nasa.gov/dataset/MUR-JPL-L4-GLOB-v4.1",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-esa-sst-cci",
+    "page": "datasets",
+    "title": "海温气候记录",
+    "copy": "ESA Sea Surface Temperature CCI：ESA CCI 长时序海表温度气候数据记录",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "satellite",
+      "climate",
+      "global"
+    ],
+    "provider": "ESA CCI",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://climate.esa.int/en/projects/sea-surface-temperature/data/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-hadisst",
+    "page": "datasets",
+    "title": "历史海冰海温",
+    "copy": "Hadley Centre Sea Ice and Sea Surface Temperature：Met Office 全球海冰与海表温度观测数据集",
+    "tags": [
+      "地球科学",
+      "ocean",
+      "climate",
+      "observation",
+      "global"
+    ],
+    "provider": "Met Office",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://www.metoffice.gov.uk/hadobs/hadisst/data/download.html",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-sea-ice-cdr",
+    "page": "datasets",
+    "title": "海冰浓度",
+    "copy": "NOAA/NSIDC Passive Microwave Sea Ice Concentration CDR：NOAA NSIDC 被动微波海冰浓度气候记录",
+    "tags": [
+      "地球科学",
+      "cryosphere",
+      "satellite",
+      "climate",
+      "global"
+    ],
+    "provider": "NOAA/NSIDC",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://nsidc.org/data/g02202",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-ghcn-daily",
+    "page": "datasets",
+    "title": "全球站点日值",
+    "copy": "Global Historical Climatology Network Daily：NOAA 全球气象站逐日观测数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "observation",
+      "station",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "CSV/TXT",
+    "format": "CSV/TXT",
+    "href": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-hadisd",
+    "page": "datasets",
+    "title": "全球站点小时值",
+    "copy": "HadISD：Met Office 全球质量控制逐小时站点观测数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "observation",
+      "station",
+      "global"
+    ],
+    "provider": "Met Office",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://hadobs.metoffice.gov.uk/hadisd/data/download.html",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gistemp",
+    "page": "datasets",
+    "title": "全球温度指数",
+    "copy": "GISS Surface Temperature Analysis：NASA 全球地表温度异常分析数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "observation",
+      "global"
+    ],
+    "provider": "NASA",
+    "size": "CSV/NetCDF",
+    "format": "CSV/NetCDF",
+    "href": "https://data.giss.nasa.gov/gistemp/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-berkeley-earth",
+    "page": "datasets",
+    "title": "地表温度",
+    "copy": "Berkeley Earth Surface Temperature：Berkeley Earth 全球地表温度数据集",
+    "tags": [
+      "地球科学",
+      "climate",
+      "observation",
+      "global"
+    ],
+    "provider": "Berkeley Earth",
+    "size": "TXT/NetCDF",
+    "format": "TXT/NetCDF",
+    "href": "https://berkeleyearth.org/data/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cmorph-cdr",
+    "page": "datasets",
+    "title": "卫星降水CDR",
+    "copy": "CMORPH Climate Data Record：NOAA 全球高分辨率卫星降水气候记录",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "satellite",
+      "climate",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://www.ncei.noaa.gov/products/climate-data-records/precipitation-cmorph",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-gsmap",
+    "page": "datasets",
+    "title": "全球降水图",
+    "copy": "Global Satellite Mapping of Precipitation：JAXA 全球卫星降水估计数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "satellite",
+      "observation",
+      "global"
+    ],
+    "provider": "JAXA",
+    "size": "NetCDF/Binary",
+    "format": "NetCDF/Binary",
+    "href": "https://sharaku.eorc.jaxa.jp/GSMaP/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-persiann-cdr",
+    "page": "datasets",
+    "title": "神经网络降水",
+    "copy": "PERSIANN-CDR：CHRS NOAA 全球卫星降水气候记录数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "satellite",
+      "climate",
+      "global"
+    ],
+    "provider": "CHRS/NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://chrsdata.eng.uci.edu/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-cpc-unified-precip",
+    "page": "datasets",
+    "title": "雨量站降水",
+    "copy": "CPC Global Unified Gauge-Based Analysis of Daily Precipitation：NOAA CPC 全球逐日雨量站融合降水数据集",
+    "tags": [
+      "地球科学",
+      "precipitation",
+      "observation",
+      "station",
+      "global"
+    ],
+    "provider": "NOAA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://psl.noaa.gov/data/gridded/data.cpc.globalprecip.html",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-sentinel1",
+    "page": "datasets",
+    "title": "雷达遥感",
+    "copy": "Sentinel-1：Copernicus C 波段合成孔径雷达观测数据集",
+    "tags": [
+      "地球科学",
+      "remote-sensing",
+      "satellite",
+      "radar",
+      "observation"
+    ],
+    "provider": "ESA",
+    "size": "SAFE/GeoTIFF",
+    "format": "SAFE/GeoTIFF",
+    "href": "https://browser.dataspace.copernicus.eu/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-sentinel2",
+    "page": "datasets",
+    "title": "Sentinel-2 多光谱遥感",
+    "copy": "Sentinel-2：Copernicus 高分辨率多光谱陆表观测数据集",
+    "tags": [
+      "地球科学",
+      "remote-sensing",
+      "satellite",
+      "land",
+      "observation"
+    ],
+    "provider": "ESA",
+    "size": "SAFE/JP2",
+    "format": "SAFE/JP2",
+    "href": "https://browser.dataspace.copernicus.eu/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-sentinel3",
+    "page": "datasets",
+    "title": "海陆卫星",
+    "copy": "Sentinel-3：Copernicus 海洋陆地温度色度高度观测数据集",
+    "tags": [
+      "地球科学",
+      "remote-sensing",
+      "satellite",
+      "ocean",
+      "land"
+    ],
+    "provider": "ESA",
+    "size": "NetCDF/SEN3",
+    "format": "NetCDF/SEN3",
+    "href": "https://browser.dataspace.copernicus.eu/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-earth-sentinel5p",
+    "page": "datasets",
+    "title": "大气污染卫星",
+    "copy": "Sentinel-5P：Copernicus TROPOMI 大气成分遥感数据集",
+    "tags": [
+      "地球科学",
+      "atmosphere",
+      "satellite",
+      "remote-sensing",
+      "air-quality"
+    ],
+    "provider": "ESA",
+    "size": "NetCDF",
+    "format": "NetCDF",
+    "href": "https://browser.dataspace.copernicus.eu/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-pdb",
+    "page": "datasets",
+    "title": "PDB结构库",
+    "copy": "PDB：蛋白与复合物结构建模的核心公共结构库",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "mmcif",
+      "pdb"
+    ],
+    "provider": "RCSB PDB / wwPDB",
+    "size": "mmCIF/PDB",
+    "format": "mmCIF/PDB",
+    "href": "https://www.rcsb.org/downloads/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-uniref90",
+    "page": "datasets",
+    "title": "UniRef90",
+    "copy": "UniRef90：蛋白同源聚类序列库，常用于 MSA 搜索",
+    "tags": [
+      "生命科学",
+      "protein",
+      "sequence",
+      "msa"
+    ],
+    "provider": "UniProt",
+    "size": "FASTA",
+    "format": "FASTA",
+    "href": "https://ftp.uniprot.org/pub/databases/uniprot/uniref/uniref90/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-uniprot",
+    "page": "datasets",
+    "title": "UniProt",
+    "copy": "UniProt：通用蛋白知识库，支持多聚体与配对信息构建",
+    "tags": [
+      "生命科学",
+      "protein",
+      "sequence",
+      "annotation"
+    ],
+    "provider": "UniProt",
+    "size": "FASTA",
+    "format": "FASTA",
+    "href": "https://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-bfd",
+    "page": "datasets",
+    "title": "BFD",
+    "copy": "BFD：AlphaFold 系列常用的大规模蛋白序列数据库",
+    "tags": [
+      "生命科学",
+      "protein",
+      "msa",
+      "sequence"
+    ],
+    "provider": "MMseqs/Soding Lab",
+    "size": "FASTA",
+    "format": "FASTA",
+    "href": "https://bfd.mmseqs.com/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-mgnify",
+    "page": "datasets",
+    "title": "MGnify",
+    "copy": "MGnify：宏基因组蛋白序列资源，常用于 MSA 检索",
+    "tags": [
+      "生命科学",
+      "metagenomics",
+      "protein",
+      "msa"
+    ],
+    "provider": "EMBL-EBI",
+    "size": "FASTA",
+    "format": "FASTA",
+    "href": "https://ftp.ebi.ac.uk/pub/databases/metagenomics/peptide_database/2022_05/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-afdb-swissprot",
+    "page": "datasets",
+    "title": "AFDB-SP",
+    "copy": "AFDB SwissProt：AlphaFold DB 的 SwissProt 蒸馏结构子集",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "swissprot"
+    ],
+    "provider": "AlphaFold DB / EMBL-EBI",
+    "size": "mmCIF/CSV",
+    "format": "mmCIF/CSV",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/swissprot_list.csv",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-afesm",
+    "page": "datasets",
+    "title": "AFESM",
+    "copy": "AFESM：用于折叠训练的大规模蒸馏蛋白结构集合",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "simplefold"
+    ],
+    "provider": "Foldseek / Apple",
+    "size": "mmCIF/CSV",
+    "format": "mmCIF/CSV",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/afesm_list.csv",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-afesme",
+    "page": "datasets",
+    "title": "AFESM-E",
+    "copy": "AFESM-E：AFESM 的扩展聚类版本，用于大规模折叠训练",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "clustering"
+    ],
+    "provider": "Foldseek / Apple",
+    "size": "JSON/mmCIF",
+    "format": "JSON/mmCIF",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/afesme_dict.json",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-opengenome2",
+    "page": "datasets",
+    "title": "OpenGenome2",
+    "copy": "OpenGenome2：面向跨物种基因组建模的大规模序列数据集",
+    "tags": [
+      "生命科学",
+      "genomics",
+      "dna",
+      "foundation_model"
+    ],
+    "provider": "Arc Institute",
+    "size": "FASTA/JSON",
+    "format": "FASTA/JSON",
+    "href": "https://modelscope.cn/datasets/arcinstitute/opengenome2",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-casp14",
+    "page": "datasets",
+    "title": "CASP14",
+    "copy": "CASP14：蛋白质结构预测标准评测集，用于折叠基准测试",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "benchmark"
+    ],
+    "provider": "CASP / Apple",
+    "size": "mmCIF/ZIP",
+    "format": "mmCIF/ZIP",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/casp14_predictions.zip",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-cameo22",
+    "page": "datasets",
+    "title": "CAMEO22",
+    "copy": "CAMEO22：持续更新型蛋白折叠评测基准的 2022 样本包",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "benchmark"
+    ],
+    "provider": "CAMEO / Apple",
+    "size": "mmCIF/ZIP",
+    "format": "mmCIF/ZIP",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/cameo22_predictions.zip",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-apo",
+    "page": "datasets",
+    "title": "Apo",
+    "copy": "Apo：双态蛋白 Apo 任务数据，用于构象切换评估",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "benchmark"
+    ],
+    "provider": "Apple SimpleFold",
+    "size": "PDB/ZIP",
+    "format": "PDB/ZIP",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/apo_predictions.zip",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-codnas",
+    "page": "datasets",
+    "title": "CoDNaS",
+    "copy": "CoDNaS：蛋白构象多样性数据，用于 fold-switch 评估",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "fold_switch"
+    ],
+    "provider": "CoDNaS / Apple",
+    "size": "PDB/ZIP",
+    "format": "PDB/ZIP",
+    "href": "https://ml-site.cdn-apple.com/models/simplefold/codnas_predictions.zip",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-protenix-release-data",
+    "page": "datasets",
+    "title": "Protenix包",
+    "copy": "Protenix Release Data：Protenix 训练与推理所需的预处理结构数据包",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "ligand"
+    ],
+    "provider": "ByteDance AML AI4Science",
+    "size": "tar.gz/mmCIF",
+    "format": "tar.gz/mmCIF",
+    "href": "https://af3-dev.tos-cn-beijing.volces.com/release_data.tar.gz",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-hg38-mm10-reference",
+    "page": "datasets",
+    "title": "hg38/mm10",
+    "copy": "hg38 / mm10 Reference Genome：AlphaGenome 推理与微调使用的人类和小鼠参考基因组",
+    "tags": [
+      "生命科学",
+      "genomics",
+      "dna",
+      "reference_genome"
+    ],
+    "provider": "Genome reference providers",
+    "size": "FASTA/FAI",
+    "format": "FASTA/FAI",
+    "href": "https://gitee.com/onescience-ai/onescience/blob/main/examples/biosciences/alphagenome/README.md",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-ur50d-2021-04",
+    "page": "datasets",
+    "title": "UR50D",
+    "copy": "UR50/D 2021_04：ESM README 中使用的 UniRef 派生蛋白预训练语料划分",
+    "tags": [
+      "生命科学",
+      "protein",
+      "sequence",
+      "language_model"
+    ],
+    "provider": "Meta AI / UniProt",
+    "size": "FASTA",
+    "format": "FASTA",
+    "href": "https://github.com/facebookresearch/esm",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-esm-structural-split",
+    "page": "datasets",
+    "title": "ESM结构集",
+    "copy": "ESMStructuralSplitDataset：ESM 系列用于结构预测评测与教程演示的结构划分数据集",
+    "tags": [
+      "生命科学",
+      "protein",
+      "structure",
+      "esm"
+    ],
+    "provider": "Meta AI",
+    "size": "Structure splits",
+    "format": "Structure splits",
+    "href": "https://github.com/facebookresearch/esm",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-esm-metagenomic-atlas",
+    "page": "datasets",
+    "title": "ESM Atlas",
+    "copy": "ESM Metagenomic Atlas：包含数亿条预测蛋白结构与嵌入的宏基因组结构图谱",
+    "tags": [
+      "生命科学",
+      "protein",
+      "metagenomics",
+      "atlas"
+    ],
+    "provider": "Meta AI",
+    "size": "PDB/embeddings",
+    "format": "PDB/API",
+    "href": "https://esmatlas.com/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-tahoe-100m",
+    "page": "datasets",
+    "title": "Tahoe-100M",
+    "copy": "Tahoe-100M：1 亿细胞规模单细胞扰动数据集，用于虚拟细胞建模",
+    "tags": [
+      "生命科学",
+      "single_cell",
+      "perturbation",
+      "transcriptomics"
+    ],
+    "provider": "Tahoe / Arc Institute",
+    "size": "h5ad/AnnData",
+    "format": "h5ad/AnnData",
+    "href": "https://huggingface.co/datasets/tahoebio/Tahoe-100M",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-scbasecount",
+    "page": "datasets",
+    "title": "scBaseCount",
+    "copy": "scBaseCount：Arc 统一处理的超大规模单细胞 RNA 测序基础数据仓",
+    "tags": [
+      "生命科学",
+      "single_cell",
+      "transcriptomics",
+      "atlas"
+    ],
+    "provider": "Arc Institute",
+    "size": "h5ad/AnnData",
+    "format": "h5ad/AnnData",
+    "href": "https://arcinstitute.org/news/news/arc-virtual-cell-atlas-launch",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-replogle-nadig-perturbseq",
+    "page": "datasets",
+    "title": "Replogle集",
+    "copy": "Replogle-Nadig Perturb-seq：STATE 常用的单细胞基因扰动响应训练与评测数据集合",
+    "tags": [
+      "生命科学",
+      "single_cell",
+      "perturbation",
+      "crispr"
+    ],
+    "provider": "Perturb-seq community",
+    "size": "h5ad/count matrix",
+    "format": "h5ad/count matrix",
+    "href": "https://figshare.com/articles/dataset/_Mapping_information-rich_genotype-phenotype_landscapes_with_genome-scale_Perturb-seq_Replogle_et_al_2022_-_commonly_requested_supplemental_files/21632564",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-virtual-cell-challenge-dataset",
+    "page": "datasets",
+    "title": "VCell挑战",
+    "copy": "Virtual Cell Challenge Dataset：Arc 虚拟细胞挑战赛的标准扰动响应评测数据集",
+    "tags": [
+      "生命科学",
+      "virtual_cell",
+      "challenge",
+      "single_cell"
+    ],
+    "provider": "Arc Institute",
+    "size": "h5ad/splits",
+    "format": "h5ad/splits",
+    "href": "https://zenodo.org/records/17342530",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-pdbbind",
+    "page": "datasets",
+    "title": "PDBbind",
+    "copy": "PDBbind：蛋白-配体复合物与实验亲和力标注的经典对接数据集",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "docking",
+      "affinity"
+    ],
+    "provider": "PDBbind",
+    "size": "PDB/SDF",
+    "format": "PDB/SDF",
+    "href": "https://www.pdbbind-plus.org.cn/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-bindingmoad",
+    "page": "datasets",
+    "title": "BindingMOAD",
+    "copy": "BindingMOAD：高质量蛋白-配体复合物资源，DiffDock 等模型常用其处理版",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "docking",
+      "structure"
+    ],
+    "provider": "Binding MOAD",
+    "size": "PDB/complexes",
+    "format": "PDB/complexes",
+    "href": "https://github.com/gcorso/DiffDock",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-dockgen",
+    "page": "datasets",
+    "title": "DockGen",
+    "copy": "DockGen：检验对接模型跨口袋泛化能力的蛋白-配体基准",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "docking",
+      "generalization"
+    ],
+    "provider": "DiffDock-L authors",
+    "size": "complexes",
+    "format": "complexes",
+    "href": "https://github.com/gcorso/DiffDock",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-posebusters-benchmark",
+    "page": "datasets",
+    "title": "PoseBusters",
+    "copy": "PoseBusters Benchmark：面向生成与对接结果几何合理性的蛋白-配体评测集",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "docking",
+      "geometry"
+    ],
+    "provider": "PoseBusters authors",
+    "size": "complexes",
+    "format": "complexes",
+    "href": "https://github.com/maabuu/posebusters",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-crossdocked2020",
+    "page": "datasets",
+    "title": "CrossDocked",
+    "copy": "CrossDocked2020：结构基药物设计常用的 cross-docking 训练数据集",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "cross_docking",
+      "sbdd"
+    ],
+    "provider": "CrossDocked2020 authors",
+    "size": "PDB/SDF/LMDB",
+    "format": "PDB/SDF/LMDB",
+    "href": "https://bits.csb.pitt.edu/files/crossdock2020/v1.1/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-casf-2016",
+    "page": "datasets",
+    "title": "CASF-2016",
+    "copy": "CASF-2016：蛋白-配体评分、排序与对接能力的经典评测基准",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "scoring",
+      "ranking"
+    ],
+    "provider": "PDBbind / CASF",
+    "size": "benchmark set",
+    "format": "benchmark set",
+    "href": "https://www.pdbbind-plus.org.cn/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-dekois2-dude-docking-poses",
+    "page": "datasets",
+    "title": "DEKOIS+DUD",
+    "copy": "DEKOIS2.0 and DUD-E Docking Poses：用于虚拟筛选与 pose 排序研究的对接姿态集合",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "virtual_screening",
+      "docking"
+    ],
+    "provider": "GenScore benchmark",
+    "size": "docking poses",
+    "format": "docking poses",
+    "href": "https://zenodo.org/records/6859325",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-csar-nrc-hiq",
+    "page": "datasets",
+    "title": "CSAR HiQ",
+    "copy": "CSAR NRC-HiQ：面向高质量复合物评分与筛选的结构生物信息 benchmark",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "scoring",
+      "affinity"
+    ],
+    "provider": "CSAR",
+    "size": "benchmark set",
+    "format": "benchmark set",
+    "href": "http://www.csardock.org/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-merck-fep-benchmark",
+    "page": "datasets",
+    "title": "Merck FEP",
+    "copy": "Merck FEP Benchmark：面向亲和力建模与排序的药化自由能评测基准",
+    "tags": [
+      "生命科学",
+      "affinity",
+      "scoring",
+      "medicinal_chemistry"
+    ],
+    "provider": "Merck",
+    "size": "benchmark set",
+    "format": "benchmark set",
+    "href": "https://github.com/sc8668/GenScore",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-pdbbind-crossdocked-core",
+    "page": "datasets",
+    "title": "PDBbind-XD",
+    "copy": "PDBbind-CrossDocked-Core：结合 PDBbind 与 cross-docking 场景的核心评测集",
+    "tags": [
+      "生命科学",
+      "protein_ligand",
+      "cross_docking",
+      "scoring"
+    ],
+    "provider": "GenScore benchmark",
+    "size": "benchmark set",
+    "format": "benchmark set",
+    "href": "https://zenodo.org/records/5525936",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-mimic-cxr",
+    "page": "datasets",
+    "title": "MIMIC-CXR",
+    "copy": "MIMIC-CXR：大规模胸部 X 光影像与报告数据集，常用于医学多模态建模",
+    "tags": [
+      "生命科学",
+      "xray",
+      "radiology",
+      "multimodal"
+    ],
+    "provider": "PhysioNet / MIT",
+    "size": "DICOM/reports",
+    "format": "DICOM/reports",
+    "href": "https://physionet.org/content/mimic-cxr/2.1.0/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-slake-vqa",
+    "page": "datasets",
+    "title": "SLAKE",
+    "copy": "SLAKE：医学图像问答数据集，用于视觉问答与多模态推理",
+    "tags": [
+      "生命科学",
+      "medical_vqa",
+      "multimodal",
+      "image"
+    ],
+    "provider": "PolyU",
+    "size": "image/QA pairs",
+    "format": "image/QA pairs",
+    "href": "https://www.med-vqa.com/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-pad-ufes-20",
+    "page": "datasets",
+    "title": "PAD-UFES",
+    "copy": "PAD-UFES-20：皮肤病灶图像与临床信息数据集，适合皮肤科医学 AI",
+    "tags": [
+      "生命科学",
+      "dermatology",
+      "image",
+      "classification"
+    ],
+    "provider": "UFES",
+    "size": "image/metadata",
+    "format": "image/metadata",
+    "href": "https://developers.google.com/health-ai-developer-foundations/medgemma/model-card",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-tcga",
+    "page": "datasets",
+    "title": "TCGA",
+    "copy": "TCGA：癌症基因组图谱资源，支持多组学与病理任务",
+    "tags": [
+      "生命科学",
+      "oncology",
+      "genomics",
+      "pathology"
+    ],
+    "provider": "NCI / NHGRI",
+    "size": "genomics/pathology",
+    "format": "clinical data",
+    "href": "https://portal.gdc.cancer.gov/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-camelyon",
+    "page": "datasets",
+    "title": "CAMELYON",
+    "copy": "CAMELYON：淋巴结病理切片转移检测标准数据集",
+    "tags": [
+      "生命科学",
+      "pathology",
+      "histopathology",
+      "cancer"
+    ],
+    "provider": "CAMELYON",
+    "size": "whole-slide images",
+    "format": "WSI",
+    "href": "https://camelyon17.grand-challenge.org/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-pmc-oa",
+    "page": "datasets",
+    "title": "PMC-OA",
+    "copy": "PMC-OA：PubMed Central 开放子集，包含大量生物医学文图内容",
+    "tags": [
+      "生命科学",
+      "biomedical_literature",
+      "multimodal",
+      "documents"
+    ],
+    "provider": "NLM / NCBI",
+    "size": "XML/PDF/images",
+    "format": "XML/PDF",
+    "href": "https://catalog.data.gov/dataset/pubmed-central-open-access-subset",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-pdebench",
+    "page": "datasets",
+    "title": "PDEBench基准",
+    "copy": "涵盖广泛偏微分方程的科学机器学习基准集",
+    "tags": [
+      "流体仿真",
+      "pde",
+      "sciml",
+      "benchmark"
+    ],
+    "provider": "PDEBench Team",
+    "size": "PDEBench",
+    "format": "HDF5",
+    "href": "https://darus.uni-stuttgart.de/dataset.xhtml?persistentId=doi:10.18419/darus-2986",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-cfdbench",
+    "page": "datasets",
+    "title": "CFDBench流体",
+    "copy": "包含多样化边界条件与几何形状的CFD基准",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "incompressible-flow",
+      "surrogate-modeling"
+    ],
+    "provider": "Tsinghua University",
+    "size": "CFDBench",
+    "format": "Numpy (.npy)",
+    "href": "https://huggingface.co/datasets/chen-yingfa/CFDBench",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-pdearena",
+    "page": "datasets",
+    "title": "PDEArena代理",
+    "copy": "现代且可扩展的PDE代理模型分布式基准",
+    "tags": [
+      "流体仿真",
+      "fluid-mechanics",
+      "electrodynamics",
+      "distributed-training"
+    ],
+    "provider": "Microsoft Research",
+    "size": "PDEArena",
+    "format": "HDF5",
+    "href": "https://huggingface.co/pdearena/datasets",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-blastnet",
+    "page": "datasets",
+    "title": "BLASTNet库",
+    "copy": "高保真可压缩反应流与湍流3D超分数据集",
+    "tags": [
+      "流体仿真",
+      "combustion",
+      "turbulence",
+      "3d-super-resolution"
+    ],
+    "provider": "Stanford University",
+    "size": "BLASTNet",
+    "format": "JSON / Binary",
+    "href": "https://blastnet.github.io/datasets",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-jhtdb",
+    "page": "datasets",
+    "title": "霍普金斯湍流库",
+    "copy": "提供TB级各向同性湍流及通道流DNS查询",
+    "tags": [
+      "流体仿真",
+      "turbulence",
+      "dns",
+      "virtual-sensors"
+    ],
+    "provider": "Johns Hopkins University",
+    "size": "Johns Hopkins Turbulence Databases",
+    "format": "Web-service Queries",
+    "href": "https://turbulence.idies.jhu.edu/home",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-deepmind-l2s",
+    "page": "datasets",
+    "title": "DeepMind粒子",
+    "copy": "用于GNN学习复杂粒子物理与流体动力学",
+    "tags": [
+      "流体仿真",
+      "particle-simulation",
+      "gnn",
+      "lagrangian"
+    ],
+    "provider": "DeepMind",
+    "size": "DeepMind Learning-to-Simulate",
+    "format": "TFRecord / Pickle",
+    "href": "https://github.com/deepmind/deepmind-research/tree/master/learning_to_simulate",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-meshgraphnets",
+    "page": "datasets",
+    "title": "MeshGraph",
+    "copy": "基于网格的流体与结构物理模拟GNN数据集",
+    "tags": [
+      "流体仿真",
+      "mesh-simulation",
+      "cfd",
+      "gnn"
+    ],
+    "provider": "DeepMind",
+    "size": "MeshGraphNets Datasets",
+    "format": "TFRecord",
+    "href": "https://github.com/wwMark/meshgraphnets/blob/main/meshgraphnets/download_dataset.sh",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-fda-blood-flow",
+    "page": "datasets",
+    "title": "FDA血液流体力学",
+    "copy": "医疗器械中血液流动的非牛顿流体力学基准",
+    "tags": [
+      "流体仿真",
+      "hemodynamics",
+      "non-newtonian",
+      "biomedical"
+    ],
+    "provider": "FDA (CDRH)",
+    "size": "FDA CFD Blood Flow Benchmark",
+    "format": "CFD Simulation",
+    "href": "https://github.com/OSEL-DAM/CFD-and-Blood-Damage-Benchmarks",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-nasa-tmr",
+    "page": "datasets",
+    "title": "NASA湍流验证",
+    "copy": "广泛使用的RANS湍流模型验证与网格收敛库",
+    "tags": [
+      "流体仿真",
+      "rans",
+      "turbulence",
+      "verification"
+    ],
+    "provider": "NASA & AIAA TMBWG",
+    "size": "NASA Turbulence Modeling Resource",
+    "format": "Data (.dat) / Plot3D",
+    "href": "https://github.com/TMBWG/turbmodels",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-spdebench",
+    "page": "datasets",
+    "title": "SPDEBench",
+    "copy": "涵盖常规与奇异随机偏微分方程的统一数据",
+    "tags": [
+      "流体仿真",
+      "spde",
+      "stochastic",
+      "mathematical-physics"
+    ],
+    "provider": "UCL Rough Path and Machine Learning Group",
+    "size": "SPDEBench",
+    "format": "Parquet",
+    "href": "https://huggingface.co/datasets/SSPDEBench/Reuglar_and_Singular_SPDEBench",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-realpdebench",
+    "page": "datasets",
+    "title": "RealPDE基准",
+    "copy": "整合真实物理测量与匹配数值仿真的基准集",
+    "tags": [
+      "流体仿真",
+      "sim-to-real",
+      "real-world-data",
+      "fluid-structure"
+    ],
+    "provider": "AI4Science-WestlakeU",
+    "size": "RealPDEBench",
+    "format": "HDF5",
+    "href": "https://huggingface.co/datasets/AI4Science-WestlakeU/RealPDEBench",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-drivaernet",
+    "page": "datasets",
+    "title": "汽车气动CFD",
+    "copy": "超8150个高保真3D汽车空气动力学仿真集",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "automotive",
+      "3d-geometry"
+    ],
+    "provider": "Mohamed Elrefaie et al.",
+    "size": "DrivAerNet++",
+    "format": "3D Meshes / CFD arrays",
+    "href": "https://dataverse.harvard.edu/dataverse/DrivAerNet",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-drivaerml",
+    "page": "datasets",
+    "title": "DrivAerML",
+    "copy": "首个包含500个参数化汽车变体的高保真CFD外部空气动力学大型数据集",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "automotive",
+      "high-fidelity"
+    ],
+    "provider": "Ashton et al.",
+    "size": "DrivAerML",
+    "format": "VTU / VTP / CSV",
+    "href": "https://huggingface.co/datasets/neashton/drivaerml",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-eagle-dataset",
+    "page": "datasets",
+    "title": "Eagle数据集",
+    "copy": "用于学习非恒定湍流动力学的大规模数据集",
+    "tags": [
+      "流体仿真",
+      "turbulent-flow",
+      "mesh-transformers",
+      "non-steady"
+    ],
+    "provider": "INSA Lyon / Naver Labs",
+    "size": "EAGLE",
+    "format": "Mesh / Graph",
+    "href": "https://dataset-dl.liris.cnrs.fr/eagle_dataset/",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-shapenet-car",
+    "page": "datasets",
+    "title": "ShapeNet车",
+    "copy": "基于ShapeNet汽车模型的3D空气动力学流场",
+    "tags": [
+      "流体仿真",
+      "car-aerodynamics",
+      "3d-geometry",
+      "cfd"
+    ],
+    "provider": "IST Austria / Autodesk",
+    "size": "ShapeNet-Car CFD",
+    "format": "Zip / Mesh",
+    "href": "http://www.nobuyuki-umetani.com/publication/mlcfd_data.zip",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-airfrans",
+    "page": "datasets",
+    "title": "AirfRANS",
+    "copy": "二维不可压缩稳态RANS翼型空气动力学数据集",
+    "tags": [
+      "流体仿真",
+      "airfoil",
+      "rans",
+      "incompressible-flow"
+    ],
+    "provider": "Sorbonne Universite / Extrality",
+    "size": "AirfRANS",
+    "format": "OpenFOAM / PyVista",
+    "href": "https://data.isir.upmc.fr/extrality/NeurIPS_2022/Dataset.zip",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-geo-fno",
+    "page": "datasets",
+    "title": "Geo-FNO基准",
+    "copy": "评估不规则几何和拓扑变化下的偏微分方程算子",
+    "tags": [
+      "流体仿真",
+      "irregular-geometries",
+      "fno",
+      "mesh-deformation"
+    ],
+    "provider": "Caltech (Zongyi Li et al.)",
+    "size": "Geo-FNO Datasets",
+    "format": "NumPy / Mat",
+    "href": "https://drive.google.com/drive/folders/1YBuaoTdOSr_qzaow-G-iwvbUI7fiUzu8",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-bubbleml",
+    "page": "datasets",
+    "title": "BubbleML",
+    "copy": "包含沸腾过程的多相多物理场流体动力学机器学习数据",
+    "tags": [
+      "流体仿真",
+      "boiling",
+      "multiphase-flow",
+      "thermodynamics"
+    ],
+    "provider": "HPCForge",
+    "size": "BubbleML",
+    "format": "HDF5",
+    "href": "https://doi.org/10.5281/zenodo.8039786",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-rae2822-airfoil",
+    "page": "datasets",
+    "title": "RAE2822翼型",
+    "copy": "RAE2822跨音速翼型的大规模气动高保真模拟",
+    "tags": [
+      "流体仿真",
+      "transonic-flow",
+      "airfoil",
+      "cvae"
+    ],
+    "provider": "Giovanni Catalani et al.",
+    "size": "RAE2822 Airfoil Dataset",
+    "format": "NumPy (.npy)",
+    "href": "https://zenodo.org/records/12700680",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-cfdoneval",
+    "page": "datasets",
+    "title": "CFDNNEval模型评估集",
+    "copy": "22个流体基准问题的综合评估数据集",
+    "tags": [
+      "流体仿真",
+      "neural-operator",
+      "benchmark",
+      "darcy-flow",
+      "multiphase"
+    ],
+    "provider": "中山大学、IJCAI",
+    "size": "CFDNNEval",
+    "format": "HDF5 / NPZ",
+    "href": "https://drive.google.com/drive/folders/1Ao9vfWjy1VTwTa-9N1axZlXlz1s6CjPW",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-kolmogorov-flow-dns",
+    "page": "datasets",
+    "title": "Kolmogorov流DNS",
+    "copy": "三维Kolmogorov流直接数值模拟数据集",
+    "tags": [
+      "流体仿真",
+      "dns",
+      "kolmogorov-flow",
+      "nek5000",
+      "ml-ready"
+    ],
+    "provider": "Nature Scientific Data",
+    "size": "Kolmogorov-Flow-DNS",
+    "format": "VTK / Python",
+    "href": "https://zenodo.org/records/16733422",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-parameterized-u-bend",
+    "page": "datasets",
+    "title": "U型管道流数据集",
+    "copy": "万组U型管流动与换热CFD仿真",
+    "tags": [
+      "流体仿真",
+      "heat-transfer",
+      "shape-optimization",
+      "openfoam",
+      "design-parameters"
+    ],
+    "provider": "卡塞尔大学",
+    "size": "Parameterized-U-Bend",
+    "format": "CSV / OpenFOAM",
+    "href": "https://daks.uni-kassel.de/handle/123456789/50",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-blendednet",
+    "page": "datasets",
+    "title": "BlendedNet",
+    "copy": "包含999个翼身融合飞行器(BWB)的高保真气动数据集",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "blended-wing-body",
+      "surrogate-modeling"
+    ],
+    "provider": "MIT DeCoDE Lab & Lincoln Lab",
+    "size": "BlendedNet",
+    "format": "RANS CFD / Point Cloud",
+    "href": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VJT9EP",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-naca0012-compressible",
+    "page": "datasets",
+    "title": "NACA0012可压缩流",
+    "copy": "NACA0012翼型可压缩RANS数据集",
+    "tags": [
+      "流体仿真",
+      "compressible-flow",
+      "naca0012",
+      "su2",
+      "graph-neural-network"
+    ],
+    "provider": "Mendeley Data / JCP",
+    "size": "NACA0012-Compressible",
+    "format": "CSV / NPZ",
+    "href": "https://data.mendeley.com/datasets/g3x4phfr3r/2",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-cylinder-flow-modulus",
+    "page": "datasets",
+    "title": "圆柱绕流训练集",
+    "copy": "NVIDIA Modulus圆柱绕流训练评估数据集",
+    "tags": [
+      "流体仿真",
+      "cylinder-flow",
+      "openfoam",
+      "graph-neural-network",
+      "mesh-reduced"
+    ],
+    "provider": "NVIDIA",
+    "size": "Cylinder-Flow-Modulus",
+    "format": "NPY",
+    "href": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/modulus/resources/modulus_datasets_cylinder-flow",
+    "source": "paper",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-rpb-cno",
+    "page": "datasets",
+    "title": "RPB 数据集",
+    "copy": "面向神经算子与科学机器学习的二维 PDE 基准数据集，涵盖 Poisson、Wave、Navier-Stokes、Darcy、Transport 等多类方程",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "representative-pde-benchmarks",
+      "neural-operators"
+    ],
+    "provider": "ETH Zurich / CAMLab 等研究机构",
+    "size": "h5",
+    "format": "h5",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-fno",
+    "page": "datasets",
+    "title": "FNO 数据集",
+    "copy": "一组通过高精度数值求解器生成的参数化偏微分方程模拟数据，涵盖 Burgers、Darcy Flow 和 Navier-Stokes 等典型任务",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "neural-operator",
+      "pde"
+    ],
+    "provider": "加利福尼亚理工学院 (California Institute of Technology)",
+    "size": "mat",
+    "format": "mat",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-fluid-pointnet-cfd",
+    "page": "datasets",
+    "title": "PointNetCFD 数据集",
+    "copy": "二维非结构网格 CFD 数据集，用于基于点云直接预测不规则几何绕流场中的速度与压力分布",
+    "tags": [
+      "流体仿真",
+      "cfd",
+      "point-cloud",
+      "unstructured-mesh"
+    ],
+    "provider": "Stanford University",
+    "size": "npy",
+    "format": "npy",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-mptrj",
+    "page": "datasets",
+    "title": "MPtrj",
+    "copy": "Materials Project DFT 弛豫轨迹数据集",
+    "tags": [
+      "材料化学",
+      "dft",
+      "relaxation-trajectory",
+      "inorganic",
+      "mlff"
+    ],
+    "provider": "LBNL / CHGNet team",
+    "size": "MPtrj",
+    "format": "extxyz / json",
+    "href": "https://figshare.com/articles/dataset/Materials_Project_Trjectory_MPtrj_Dataset/23713842",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-salex",
+    "page": "datasets",
+    "title": "sAlex",
+    "copy": "FAIR 重打包的 Alexandria 子集，PBE 参考",
+    "tags": [
+      "材料化学",
+      "dft",
+      "inorganic",
+      "alexandria",
+      "mlff"
+    ],
+    "provider": "Alexandria DB / Schmidt et al.",
+    "size": "sAlex",
+    "format": "aselmdb",
+    "href": "https://huggingface.co/datasets/facebook/OMAT24",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-omat24",
+    "page": "datasets",
+    "title": "OMat24",
+    "copy": "Meta FAIR 无机材料大规模 PBE 数据集",
+    "tags": [
+      "材料化学",
+      "dft",
+      "inorganic",
+      "foundation-data",
+      "fair-chem"
+    ],
+    "provider": "Meta FAIR",
+    "size": "OMat24",
+    "format": "aselmdb",
+    "href": "https://huggingface.co/datasets/facebook/OMAT24",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-omol25",
+    "page": "datasets",
+    "title": "OMol25",
+    "copy": "Meta FAIR 大规模有机分子 ωB97M-V 数据集",
+    "tags": [
+      "材料化学",
+      "dft",
+      "molecular",
+      "foundation-data",
+      "fair-chem"
+    ],
+    "provider": "Meta FAIR",
+    "size": "OMol25",
+    "format": "aselmdb",
+    "href": "https://huggingface.co/datasets/facebook/OMol25",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-oc20",
+    "page": "datasets",
+    "title": "OC20",
+    "copy": "Open Catalyst 2020，催化吸附构型数据集",
+    "tags": [
+      "材料化学",
+      "dft",
+      "catalysis",
+      "adsorption",
+      "fair-chem"
+    ],
+    "provider": "Meta FAIR / CMU",
+    "size": "OC20",
+    "format": "lmdb / aselmdb",
+    "href": "https://github.com/facebookresearch/fairchem/blob/main/docs/catalysts/datasets/oc20.md",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-alexandria",
+    "page": "datasets",
+    "title": "Alexandria",
+    "copy": "高通量无机晶体 DFT 数据库",
+    "tags": [
+      "材料化学",
+      "dft",
+      "inorganic",
+      "high-throughput",
+      "crystal"
+    ],
+    "provider": "Schmidt et al. / RUB ICAMS",
+    "size": "Alexandria",
+    "format": "json / cif",
+    "href": "https://alexandria.icams.rub.de/data/pbe/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-oc22",
+    "page": "datasets",
+    "title": "OC22",
+    "copy": "Open Catalyst 2022，氧化物催化剂数据集",
+    "tags": [
+      "材料化学",
+      "dft",
+      "catalysis",
+      "oxide",
+      "fair-chem"
+    ],
+    "provider": "Meta FAIR / CMU",
+    "size": "OC22",
+    "format": "lmdb / aselmdb",
+    "href": "https://github.com/facebookresearch/fairchem/blob/main/docs/catalysts/datasets/oc22.md",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-md22",
+    "page": "datasets",
+    "title": "MD22",
+    "copy": "大分子有机体系 MD 轨迹基准数据集",
+    "tags": [
+      "材料化学",
+      "md",
+      "molecular",
+      "benchmark",
+      "mlff"
+    ],
+    "provider": "sGDML team / Chmiela et al.",
+    "size": "MD22",
+    "format": "npz / xyz",
+    "href": "http://www.quantum-machine.org/gdml/data/",
+    "source": "third-party",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-deepmd-water-demo",
+    "page": "datasets",
+    "title": "DeePMD水",
+    "copy": "DeePMD-kit 官方水分子训练示例数据",
+    "tags": [
+      "材料化学",
+      "mlff",
+      "water",
+      "demo",
+      "deepmd"
+    ],
+    "provider": "DeepModeling",
+    "size": "DeePMD water",
+    "format": "deepmd-npy",
+    "href": "https://github.com/deepmodeling/deepmd-kit/tree/master/examples/water",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-mace-example",
+    "page": "datasets",
+    "title": "MACE示例",
+    "copy": "MACE 官方 tutorial 训练示例数据",
+    "tags": [
+      "材料化学",
+      "mlff",
+      "mace",
+      "demo",
+      "tutorial"
+    ],
+    "provider": "ACEsuit / MACE team",
+    "size": "MACE example",
+    "format": "extxyz",
+    "href": "https://github.com/ACEsuit/mace/tree/main/tests",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-material-matpl-example",
+    "page": "datasets",
+    "title": "MatPL示例",
+    "copy": "MatPL NEP 训练示例 (AuAg/Cu/HfO2/LiSiC)",
+    "tags": [
+      "材料化学",
+      "mlff",
+      "nep",
+      "demo",
+      "matpl"
+    ],
+    "provider": "LonxunQuantum",
+    "size": "MatPL example",
+    "format": "extxyz",
+    "href": "https://github.com/LonxunQuantum/MatPL",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-ms-alphafold3",
+    "page": "datasets",
+    "title": "AlphaFold3数据集",
+    "copy": "OneScience 魔搭 AlphaFold3 训练与评测数据集",
+    "tags": [
+      "生命科学",
+      "AlphaFold3",
+      "modelscope",
+      "protein"
+    ],
+    "provider": "OneScience",
+    "size": "JSON/FASTA/mmCIF/MMseqs DB/sharded FASTA",
+    "format": "JSON/FASTA/mmCIF/MMseqs DB/sharded FASTA",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-ms-protenix",
+    "page": "datasets",
+    "title": "Protenix数据集",
+    "copy": "OneScience 魔搭 Protenix 训练与评测数据集",
+    "tags": [
+      "生命科学",
+      "Protenix",
+      "modelscope",
+      "protein"
+    ],
+    "provider": "OneScience",
+    "size": "json/cif",
+    "format": "json/cif",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-datasets-life-ms-esm2",
+    "page": "datasets",
+    "title": "ESM-2数据集",
+    "copy": "OneScience 魔搭 ESM-2 训练与评测数据集",
+    "tags": [
+      "生命科学",
+      "ESM-2",
+      "modelscope",
+      "protein"
+    ],
+    "provider": "OneScience",
+    "size": "pt",
+    "format": "pt",
+    "source": "onescience",
+    "metricLabel": "数据源",
+    "action": "下载"
+  },
+  {
+    "id": "seed-models-modelhub",
+    "page": "models",
+    "title": "GraphCast",
+    "copy": "Google DeepMind 中期全球天气预报模型",
+    "tags": [
+      "graph-model"
+    ],
+    "provider": "weather",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fourcastnet",
+    "page": "models",
+    "title": "FourCastNet",
+    "copy": "NVIDIA 全球高分辨率神经算子天气预报模型",
+    "tags": [
+      "neural-operator"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fourcastnet-v2",
+    "page": "models",
+    "title": "FourCastNet_v2",
+    "copy": "从v1的自适应傅里叶神经算子 (AFNO) 改为球面傅里叶神经算子 (SFNO)",
+    "tags": [
+      "neural-operator",
+      "sfno"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-pangu-weather",
+    "page": "models",
+    "title": "Pangu-weather",
+    "copy": "Huawei 三维高分辨率全球天气预报模型",
+    "tags": [
+      "spatiotemporal"
+    ],
+    "provider": "weather",
+    "size": "PyTorch/ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-corrdiff",
+    "page": "models",
+    "title": "CorrDiff",
+    "copy": "NVIDIA 千米级天气生成式降尺度模型",
+    "tags": [
+      "downscaling",
+      "generative"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fengwu",
+    "page": "models",
+    "title": "FengWu",
+    "copy": "OpenEarthLab 中期全球天气预报模型",
+    "tags": [
+      "spatiotemporal"
+    ],
+    "provider": "weather",
+    "size": "ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fuxi",
+    "page": "models",
+    "title": "FuXi",
+    "copy": "级联机器学习全球十五天天气预报模型",
+    "tags": [
+      "spatiotemporal"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fuxi-v21",
+    "page": "models",
+    "title": "FuXi_v21",
+    "copy": "保持均方根误差 (RMSE) 等传统指标不下降的前提下，生成更清晰、细节更丰富的预报场",
+    "tags": [
+      "extreme-weather"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-oneforecast",
+    "page": "models",
+    "title": "OneForecast",
+    "copy": "基于图神经网络 (GNN) 的全球-区域嵌套天气预报通用框架",
+    "tags": [
+      "graph-model",
+      "global-forecast"
+    ],
+    "provider": "weather",
+    "size": "PyTorch/ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-stormcast",
+    "page": "models",
+    "title": "StormCast",
+    "copy": "使用大尺度天气背景约束区域状态演变，并通过生成式扩散方法补充确定性预报难以刻画的细尺度结构",
+    "tags": [
+      "hrrr",
+      "regional",
+      "diffusion"
+    ],
+    "provider": "weather",
+    "size": "PyTorch/ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-globalsurgeml",
+    "page": "models",
+    "title": "GlobalSurgeML",
+    "copy": "基于气象和海洋环境变量，使用线性回归与随机森林模拟全球沿海每日最大风暴增水。",
+    "tags": [
+      "storm-surge",
+      "random-forest",
+      "coastal-flooding"
+    ],
+    "provider": "weather",
+    "size": "PyTorch/scikit-learn",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-firecubenet",
+    "page": "models",
+    "title": "FireCubeNet",
+    "copy": "基于多源 FireCube 时空数据和 ConvLSTM，综合环境驱动因素预测次日野火危险。",
+    "tags": [
+      "wildfire",
+      "firecube",
+      "convlstm"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-wofs-stormcal",
+    "page": "models",
+    "title": "WoFS-StormCal",
+    "copy": "基于 WoFS 集合风暴轨迹特征，校准龙卷风、严重冰雹和严重大风的短时概率预报。",
+    "tags": [
+      "severe-weather",
+      "wofs",
+      "probability-calibration"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-climatebench",
+    "page": "models",
+    "title": "ClimateBench",
+    "copy": "使用 CNN-LSTM 学习排放与气候响应之间的关系，快速模拟不同情景下的全球气候变化。",
+    "tags": [
+      "climate-projection",
+      "cnn-lstm"
+    ],
+    "provider": "climate",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-causalmodelevaluation",
+    "page": "models",
+    "title": "CausalModelEvaluation",
+    "copy": "利用因果网络评价气候模型的过程表示能力，并约束未来全球降水变化。",
+    "tags": [
+      "causal-discovery",
+      "pcmci"
+    ],
+    "provider": "climate",
+    "size": "PyTorch/scikit-learn",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-xihe",
+    "page": "models",
+    "title": "XiHe",
+    "copy": "全球高分辨率海洋涡旋预报模型",
+    "tags": [
+      "ocean",
+      "spatiotemporal"
+    ],
+    "provider": "ocean",
+    "size": "ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-wenhai",
+    "page": "models",
+    "title": "WenHai",
+    "copy": "深度神经网络全球涡旋海洋预报模型",
+    "tags": [
+      "ocean",
+      "spatiotemporal"
+    ],
+    "provider": "ocean",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-gencast",
+    "page": "models",
+    "title": "GenCast",
+    "copy": "Google DeepMind 中期集合天气预报模型",
+    "tags": [
+      "probabilistic",
+      "generative"
+    ],
+    "provider": "weather",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-weathernext-2",
+    "page": "models",
+    "title": "WeatherNext2",
+    "copy": "Google DeepMind 全球概率天气预报模型",
+    "tags": [
+      "probabilistic"
+    ],
+    "provider": "weather",
+    "size": "Google internal",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-artificial-intelligence-forecasting-system",
+    "page": "models",
+    "title": "Artificial Intelligence Forecasting System",
+    "copy": "ECMWF 业务化 AI 全球天气预报系统",
+    "tags": [
+      "graph-model"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-aurora",
+    "page": "models",
+    "title": "AURORA",
+    "copy": "Microsoft 地球系统基础模型",
+    "tags": [
+      "climate"
+    ],
+    "provider": "earth-system",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-neuralgcm",
+    "page": "models",
+    "title": "NeuralGCM",
+    "copy": "Google 混合物理与机器学习大气环流模型",
+    "tags": [
+      "climate",
+      "physics-informed"
+    ],
+    "provider": "climate",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-prithvi-wxc",
+    "page": "models",
+    "title": "PrithviWxC",
+    "copy": "NASA IBM 天气气候基础模型",
+    "tags": [
+      "climate"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-climax",
+    "page": "models",
+    "title": "ClimaX",
+    "copy": "Microsoft 天气气候通用基础模型",
+    "tags": [
+      "climate"
+    ],
+    "provider": "climate",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-metnet-3",
+    "page": "models",
+    "title": "metnet-3",
+    "copy": "Google 短临与区域天气预报神经网络模型",
+    "tags": [
+      "nowcasting",
+      "precipitation"
+    ],
+    "provider": "weather",
+    "size": "Google internal",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-nowcastnet",
+    "page": "models",
+    "title": "NowcastNet_Earth",
+    "copy": "极端降水临近预报生成模型",
+    "tags": [
+      "precipitation",
+      "nowcasting",
+      "generative"
+    ],
+    "provider": "precipitation",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-deep-generative-model-of-rainfall",
+    "page": "models",
+    "title": "Deep-Generative-Model-of-Rain",
+    "copy": "DeepMind 雷达降水概率临近预报模型",
+    "tags": [
+      "precipitation",
+      "nowcasting",
+      "probabilistic",
+      "generative"
+    ],
+    "provider": "precipitation",
+    "size": "TensorFlow",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-earthformer",
+    "page": "models",
+    "title": "Earthformer",
+    "copy": "面向地球系统预测的时空 Transformer 模型",
+    "tags": [
+      "climate",
+      "spatiotemporal"
+    ],
+    "provider": "earth-system",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-spherical-fourier-neural-operator",
+    "page": "models",
+    "title": "Spherical-Fourier-Neural-Operators",
+    "copy": "面向球面网格天气气候建模的神经算子",
+    "tags": [
+      "climate",
+      "neural-operator"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-deep-learning-weather-prediction",
+    "page": "models",
+    "title": "deep-learning-weather-prediction",
+    "copy": "早期全球数据驱动天气预报模型",
+    "tags": [
+      "spatiotemporal"
+    ],
+    "provider": "weather",
+    "size": "TensorFlow/Keras",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-stormer",
+    "page": "models",
+    "title": "Stormer",
+    "copy": "面向中期天气预报的可扩展 Transformer 模型",
+    "tags": [
+      "spatiotemporal"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-atmorep",
+    "page": "models",
+    "title": "AtmoRep",
+    "copy": "大气动力学随机表征学习模型",
+    "tags": [
+      "atmosphere"
+    ],
+    "provider": "atmosphere",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-aardvark-weather",
+    "page": "models",
+    "title": "Aardvark-Weather",
+    "copy": "端到端观测驱动全球天气预报模型",
+    "tags": [
+      "observation-driven"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-graphdop",
+    "page": "models",
+    "title": "GraphDOP",
+    "copy": "ECMWF 直接从观测初始化的图天气预报模型",
+    "tags": [
+      "graph-model",
+      "observation-driven"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-glonet",
+    "page": "models",
+    "title": "GLONET",
+    "copy": "Mercator 全球神经海洋预报模型",
+    "tags": [
+      "ocean",
+      "spatiotemporal"
+    ],
+    "provider": "ocean",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-ai2-climate-emulator",
+    "page": "models",
+    "title": "Ai2_Climate_Emulator",
+    "copy": "Ai2 全球天气气候机器学习模拟器",
+    "tags": [
+      "climate",
+      "emulator"
+    ],
+    "provider": "climate",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-samudra",
+    "page": "models",
+    "title": "Samudra",
+    "copy": "M2LInES 全球海洋气候模拟器",
+    "tags": [
+      "ocean",
+      "climate",
+      "emulator"
+    ],
+    "provider": "ocean",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fuxi-s2s",
+    "page": "models",
+    "title": "FuXi-S2S",
+    "copy": "面向全球次季节预测的 FuXi 系列模型",
+    "tags": [
+      "climate",
+      "probabilistic"
+    ],
+    "provider": "climate",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-fengwu-w2s",
+    "page": "models",
+    "title": "FengWu-W2S",
+    "copy": "面向天气到次季节无缝预报的 FengWu 模型",
+    "tags": [
+      "climate"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-seeds",
+    "page": "models",
+    "title": "SEEDS",
+    "copy": "Google Research 天气集合预报扩散生成模型",
+    "tags": [
+      "probabilistic",
+      "generative"
+    ],
+    "provider": "weather",
+    "size": "TensorFlow/JAX",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-climode",
+    "page": "models",
+    "title": "ClimODE",
+    "copy": "物理约束神经 ODE 天气气候预报模型",
+    "tags": [
+      "climate",
+      "physics-informed"
+    ],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-spherical-dyffusion",
+    "page": "models",
+    "title": "Spherical DYffusion",
+    "copy": "面向全球气候模拟的球面扩散模拟器",
+    "tags": [
+      "climate",
+      "emulator",
+      "generative"
+    ],
+    "provider": "climate",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-w-mae",
+    "page": "models",
+    "title": "W-MAE",
+    "copy": "多变量天气预报掩码自编码预训练模型",
+    "tags": [],
+    "provider": "weather",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-rainnet",
+    "page": "models",
+    "title": "RainNet",
+    "copy": "基于卷积神经网络的雷达降水临近预报模型",
+    "tags": [
+      "precipitation",
+      "nowcasting",
+      "spatiotemporal"
+    ],
+    "provider": "precipitation",
+    "size": "Keras",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-convolutional-lstm-nowcasting",
+    "page": "models",
+    "title": "ConvLSTM",
+    "copy": "面向对流降水临近预报的经典 ConvLSTM 模型",
+    "tags": [
+      "precipitation",
+      "nowcasting",
+      "spatiotemporal"
+    ],
+    "provider": "precipitation",
+    "size": "Theano",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-smaat-unet",
+    "page": "models",
+    "title": "SmaAt-UNet",
+    "copy": "小型注意力 UNet 降水临近预报模型",
+    "tags": [
+      "precipitation",
+      "nowcasting",
+      "spatiotemporal"
+    ],
+    "provider": "precipitation",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-prithvi-eo",
+    "page": "models",
+    "title": "Prithvi-EO",
+    "copy": "NASA IBM 地球观测多时相基础模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-terramind",
+    "page": "models",
+    "title": "TerraMind",
+    "copy": "IBM ESA 地球观测任意模态生成基础模型",
+    "tags": [
+      "remote-sensing",
+      "multimodal",
+      "generative"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-clay-foundation-model",
+    "page": "models",
+    "title": "Clay-Foundation-Model",
+    "copy": "面向地球观测嵌入与下游任务的开源基础模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-alphaearth-foundations",
+    "page": "models",
+    "title": "AlphaEarthFoundations",
+    "copy": "Google DeepMind 全球地球观测嵌入基础模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "Google internal",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-surya",
+    "page": "models",
+    "title": "Surya",
+    "copy": "NASA IBM 太阳物理与空间天气基础模型",
+    "tags": [
+      "heliophysics"
+    ],
+    "provider": "heliophysics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-satmae",
+    "page": "models",
+    "title": "SatMAE",
+    "copy": "面向多光谱时序卫星影像的 MAE 预训练模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-satmae-2",
+    "page": "models",
+    "title": "SatMAE-PP",
+    "copy": "面向多尺度多光谱卫星影像的预训练模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-scale-mae",
+    "page": "models",
+    "title": "Scale-MAE",
+    "copy": "面向多尺度地理空间表征学习的 MAE 模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-dofa",
+    "page": "models",
+    "title": "DOFA",
+    "copy": "面向多模态地球观测的动态一体化基础模型",
+    "tags": [
+      "remote-sensing",
+      "multimodal"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-remoteclip",
+    "page": "models",
+    "title": "RemoteCLIP",
+    "copy": "面向遥感图文检索与理解的视觉语言基础模型",
+    "tags": [
+      "remote-sensing",
+      "vision-language"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-skysense",
+    "page": "models",
+    "title": "SkySense",
+    "copy": "面向地球观测通用解译的多模态遥感基础模型",
+    "tags": [
+      "remote-sensing",
+      "multimodal"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-spectralgpt",
+    "page": "models",
+    "title": "SpectralGPT",
+    "copy": "面向光谱遥感影像理解的生成式预训练模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-modelhub-satlaspretrain",
+    "page": "models",
+    "title": "SatlasPretrain",
+    "copy": "AI2 大规模遥感理解预训练模型",
+    "tags": [
+      "remote-sensing"
+    ],
+    "provider": "remote-sensing",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life",
+    "page": "models",
+    "title": "AlphaFold",
+    "copy": "DeepMind 蛋白质结构预测模型，支持单体与多聚体推理",
+    "tags": [
+      "protein",
+      "structure",
+      "folding",
+      "monomer",
+      "multimer"
+    ],
+    "provider": "biology",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-openfold",
+    "page": "models",
+    "title": "OpenFold",
+    "copy": "AlphaFold 2 的 PyTorch 重实现，适合训练与工程集成",
+    "tags": [
+      "protein",
+      "structure",
+      "folding",
+      "alphafold",
+      "pytorch"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-alphafold3",
+    "page": "models",
+    "title": "AlphaFold3",
+    "copy": "面向蛋白、核酸与配体复合物的多模态结构预测模型",
+    "tags": [
+      "protein",
+      "complex",
+      "ligand",
+      "nucleic_acid",
+      "structure"
+    ],
+    "provider": "biology",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-protenix",
+    "page": "models",
+    "title": "protenix",
+    "copy": "开源可训练的 AF3 风格生物大分子复合物结构预测模型",
+    "tags": [
+      "protein",
+      "complex",
+      "ligand",
+      "structure",
+      "finetuning"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-rfdiffusion",
+    "page": "models",
+    "title": "RFdiffusion",
+    "copy": "扩散式蛋白骨架设计模型，支持 motif、binder 与对称设计",
+    "tags": [
+      "protein_design",
+      "backbone",
+      "diffusion",
+      "binder",
+      "scaffolding"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-proteinmpnn",
+    "page": "models",
+    "title": "ProteinMPNN",
+    "copy": "从蛋白骨架反向生成序列的高效设计模型",
+    "tags": [
+      "protein_design",
+      "inverse_folding",
+      "sequence_design",
+      "backbone"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-pt-dit",
+    "page": "models",
+    "title": "PT-DiT",
+    "copy": "基于 ProToken 的蛋白序列与结构联合扩散生成模型",
+    "tags": [
+      "protein_design",
+      "diffusion",
+      "latent_space",
+      "protoken",
+      "co_design"
+    ],
+    "provider": "biology",
+    "size": "JAX/Flax",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-simplefold",
+    "page": "models",
+    "title": "SimpleFold",
+    "copy": "仅依赖通用 Transformer 的流匹配蛋白折叠模型",
+    "tags": [
+      "protein",
+      "folding",
+      "transformer",
+      "flow_matching",
+      "validation"
+    ],
+    "provider": "biology",
+    "size": "PyTorch/MLX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-evo2",
+    "page": "models",
+    "title": "evo2",
+    "copy": "面向超长 DNA 序列建模与设计的基因组基础模型",
+    "tags": [
+      "genomics",
+      "dna",
+      "long_context",
+      "foundation_model",
+      "design"
+    ],
+    "provider": "genomics",
+    "size": "PyTorch/NeMo",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-alphagenome",
+    "page": "models",
+    "title": "alphagenome",
+    "copy": "统一 DNA 序列模型，可预测多种基因组功能信号",
+    "tags": [
+      "genomics",
+      "dna",
+      "multiomics",
+      "variant_scoring",
+      "track_prediction"
+    ],
+    "provider": "genomics",
+    "size": "JAX/Haiku",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-molsculptor",
+    "page": "models",
+    "title": "MolSculptor",
+    "copy": "面向多靶点抑制剂设计的扩散加进化小分子生成框架",
+    "tags": [
+      "small_molecule",
+      "drug_discovery",
+      "diffusion",
+      "docking",
+      "optimization"
+    ],
+    "provider": "drug_discovery",
+    "size": "JAX/Flax",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-esm-2",
+    "page": "models",
+    "title": "ESM",
+    "copy": "Meta 通用蛋白语言模型，支持序列表征、结构与功能相关任务",
+    "tags": [
+      "protein",
+      "language_model",
+      "transformer",
+      "embeddings",
+      "variant_effect",
+      "structure"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-foldseek",
+    "page": "models",
+    "title": "Foldseek",
+    "copy": "高速蛋白结构搜索与聚类工具，支持 PDB、AFDB 与 ESM Atlas",
+    "tags": [
+      "structure_search",
+      "alignment",
+      "clustering",
+      "protein",
+      "3di"
+    ],
+    "provider": "bioinformatics",
+    "size": "C++/CUDA",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-state",
+    "page": "models",
+    "title": "STATE",
+    "copy": "面向虚拟细胞的扰动响应预测模型，覆盖多细胞环境与上下文",
+    "tags": [
+      "virtual_cell",
+      "perturbation",
+      "single_cell",
+      "transcriptomics",
+      "foundation_model"
+    ],
+    "provider": "systems_biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-la-proteina",
+    "page": "models",
+    "title": "La-Proteina",
+    "copy": "联合生成蛋白序列与全原子结构的部分潜变量流匹配模型",
+    "tags": [
+      "protein_design",
+      "atomistic",
+      "flow_matching",
+      "co_design",
+      "motif_scaffolding"
+    ],
+    "provider": "biology",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-diffdock",
+    "page": "models",
+    "title": "DiffDock",
+    "copy": "基于 3D 扩散的蛋白-小分子对接模型，输出 pose 与置信度排序",
+    "tags": [
+      "docking",
+      "protein_ligand",
+      "diffusion",
+      "pose_prediction",
+      "confidence"
+    ],
+    "provider": "drug_discovery",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-targetdiff",
+    "page": "models",
+    "title": "TargetDiff",
+    "copy": "在蛋白口袋条件下联合生成 3D 分子并预测亲和力的扩散模型",
+    "tags": [
+      "molecule_generation",
+      "protein_pocket",
+      "diffusion",
+      "affinity_prediction",
+      "3d"
+    ],
+    "provider": "drug_discovery",
+    "size": "PyTorch/PyG",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-genscore",
+    "page": "models",
+    "title": "GenScore",
+    "copy": "面向评分、排序、对接和筛选平衡优化的蛋白-配体评分框架",
+    "tags": [
+      "scoring",
+      "protein_ligand",
+      "affinity",
+      "docking",
+      "virtual_screening"
+    ],
+    "provider": "drug_discovery",
+    "size": "PyTorch/PyG",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-life-medgemma",
+    "page": "models",
+    "title": "Medgemma",
+    "copy": "Google 医疗多模态模型集合，支持医学文本与影像理解",
+    "tags": [
+      "medical_ai",
+      "multimodal",
+      "llm",
+      "vision_encoder",
+      "radiology"
+    ],
+    "provider": "medical_ai",
+    "size": "PyTorch/Transformers",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid",
+    "page": "models",
+    "title": "FNO",
+    "copy": "加州理工学院提出的基于傅里叶变换的神经算子，能够在频域中高效学习无限维偏微分方程的解空间映射，是目前应用最广泛的PDE基础模型之一。",
+    "tags": [
+      "pde-solver",
+      "neural-operator",
+      "spectral"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-gfno",
+    "page": "models",
+    "title": "GFNO",
+    "copy": "基于群等变傅里叶神经算子，在 FNO 的频域计算中引入旋转、反射等几何对称性，用于二维 Navier-Stokes 流场的时序预测与 CFD 代理建模。",
+    "tags": [
+      "neural-operator",
+      "equivariant",
+      "cfd",
+      "navier-stokes"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-deeponet",
+    "page": "models",
+    "title": "DeepONet",
+    "copy": "布朗大学 George Karniadakis 团队提出的深度算子网络，包含 Branch Net 和 Trunk Net，通过通用逼近定理学习非线性算子，适用于各种复杂的偏微分方程。",
+    "tags": [
+      "operator-network",
+      "pde-solver",
+      "physics-informed"
+    ],
+    "provider": "mathematics",
+    "size": "TensorFlow/PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-mgn",
+    "page": "models",
+    "title": "MGN",
+    "copy": "Google DeepMind 提出的基于图神经网络的物理模拟框架，能够在中等规模的网格上学习复杂的流体和固体力学动态，泛化能力强。",
+    "tags": [
+      "gnn",
+      "mesh-based",
+      "simulation"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "TensorFlow/JAX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-transolver",
+    "page": "models",
+    "title": "Transolver-Airfoil-Design",
+    "copy": "拓扑感知 PDE Transformer",
+    "tags": [
+      "transformer",
+      "pde-solver",
+      "attention"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-u-no",
+    "page": "models",
+    "title": "UNO",
+    "copy": "将经典的 U-Net 架构与 Neural Operator 理论结合，在处理高频流体特征和多尺度 PDE 问题时表现出比标准 FNO 更高的精度。",
+    "tags": [
+      "multi-scale",
+      "neural-operator",
+      "cnn"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-pinns",
+    "page": "models",
+    "title": "PINNs",
+    "copy": "将偏微分方程的物理定律作为惩罚项加入神经网络损失函数中，无需大量标记数据即可求解正向和逆向流体力学问题。",
+    "tags": [
+      "physics-informed",
+      "inverse-problem",
+      "pde-solver"
+    ],
+    "provider": "mathematics",
+    "size": "PyTorch/TensorFlow",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-geo-fno",
+    "page": "models",
+    "title": "Geo-FNO",
+    "copy": "FNO 的变体，专为处理不规则几何形状（如翼型、复杂管道）的偏微分方程设计，通过坐标变换将不规则网格映射到均匀网格上。",
+    "tags": [
+      "neural-operator",
+      "geometry-aware",
+      "cfd"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-gino",
+    "page": "models",
+    "title": "GINO",
+    "copy": "结合了图神经网络（GNN）处理复杂几何边界的能力与 FNO 高效求解的优势，专门解决复杂3D几何下的工业级流体力学问题（如汽车空气动力学）。",
+    "tags": [
+      "neural-operator",
+      "gnn",
+      "3d-geometry"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-mp-pde",
+    "page": "models",
+    "title": "MP_PDE",
+    "copy": "使用消息传递机制（Message Passing）的一维和二维 PDE 求解器，通过自回归方式预测流体随时间的演化，具有良好的时间外推能力。",
+    "tags": [
+      "gnn",
+      "message-passing",
+      "time-evolution"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-cno",
+    "page": "models",
+    "title": "CNO",
+    "copy": "挑战了 FNO 必须依赖全局感受野的观念，证明了在适当的设计下，连续卷积（Continuous Convolutions）也能构建出强大的无限维偏微分方程算子。",
+    "tags": [
+      "neural-operator",
+      "continuous-convolution",
+      "pde-solver"
+    ],
+    "provider": "mathematics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-factformer",
+    "page": "models",
+    "title": "FactFormer",
+    "copy": "基于轴向分解核积分理论的可扩展Transformer，通过将多维输入函数投影到一维域以消除三维流体建模的内存壁垒。",
+    "tags": [
+      "factorized-attention",
+      "transformer"
+    ],
+    "provider": "turbulence-modeling",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-gatr",
+    "page": "models",
+    "title": "GATr",
+    "copy": "结合了等变图神经网络（Equivariant GNNs）和 Transformer 的优势，利用几何代数来处理三维空间中的物理交互，在流体和刚体动力学中表现优异。",
+    "tags": [
+      "transformer",
+      "geometric-algebra",
+      "equivariant"
+    ],
+    "provider": "mechanics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-transolver-2",
+    "page": "models",
+    "title": "Transolver-Car-Design",
+    "copy": "百万级网格 PDE 求解",
+    "tags": [
+      "transformer",
+      "million-scale",
+      "physics-attention"
+    ],
+    "provider": "industrial-cfd",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-factorized-fourier-neural-operator",
+    "page": "models",
+    "title": "Factorized Fourier Neural Operator",
+    "copy": "傅里叶神经算子的进阶变体，通过对谱卷积权重进行因子化处理，显著减少参数量并提升了多相流的建模能力。",
+    "tags": [
+      "fno",
+      "operator-learning"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-koopman-neural-operator",
+    "page": "models",
+    "title": "KNO",
+    "copy": "基于Koopman算子理论的无网格求解器，通过学习无限维线性算子，将复杂的非线性偏微分方程动态转化为线性预测。",
+    "tags": [
+      "koopman-theory",
+      "operator-learning"
+    ],
+    "provider": "dynamic-systems",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-multi-scale-patch-transformer",
+    "page": "models",
+    "title": "Multi-Scale Patch Transformer",
+    "copy": "通过将计算域划分为空间连贯的图像块，并在块内局部与块间全局进行双层注意力建模，以应对工业级物理仿真挑战。",
+    "tags": [
+      "transformer",
+      "patch-attention"
+    ],
+    "provider": "industrial-cfd",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-universal-physics-transformers",
+    "page": "models",
+    "title": "Universal Physics Transformers",
+    "copy": "一个高度统一的物理学习范式，抛弃了刚性的网格或粒子潜在结构限制，实现欧拉流与拉格朗日粒子域的无缝跨界建模。",
+    "tags": [
+      "transformer",
+      "unified-model"
+    ],
+    "provider": "eulerian, lagrangian",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-anchored-branched-universal-physics-transformers",
+    "page": "models",
+    "title": "Anchored-Branched Universal Physics Transformers",
+    "copy": "UPT架构向工业规模拓展的重要分支模型，专注于解决复杂三维体积网格中极为棘手的表面与体积交互流体动力学问题。",
+    "tags": [
+      "transformer",
+      "industrial-scale"
+    ],
+    "provider": "industrial-aerodynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-oformer",
+    "page": "models",
+    "title": "OFormer",
+    "copy": "专为算子学习定制的交叉注意力Transformer，通过将物理边界和初始条件作为连续查询点云进行注入，实现任意采样模式的学习。",
+    "tags": [
+      "transformer",
+      "cross-attention"
+    ],
+    "provider": "operator-learning",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-pointnetcfd",
+    "page": "models",
+    "title": "PointNetCFD",
+    "copy": "彻底摒弃传统计算流体力学网格拓扑，将流场域节点视为无序点云，利用PointNet架构预测不规则域流场的深度学习框架。",
+    "tags": [
+      "point-cloud",
+      "geometry-learning"
+    ],
+    "provider": "irregular-cfd",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-orthogonal-attention-neural-operator",
+    "page": "models",
+    "title": "ONO",
+    "copy": "基于正交注意力构建的神经算子，通过显式模拟核积分算子的特征分解过程，赋予模型极致的防过拟合正则化能力。",
+    "tags": [
+      "orthogonal-attention",
+      "regularization"
+    ],
+    "provider": "operator-learning",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-poseidon",
+    "page": "models",
+    "title": "Poseidon",
+    "copy": "一个预训练偏微分方程基础模型家族，在多样化物理数据集上预训练后，展现出对未见物理方程的强大零样本与少样本泛化能力。",
+    "tags": [
+      "multi-physics"
+    ],
+    "provider": "pde-foundation-model",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-diffusionpde",
+    "page": "models",
+    "title": "DiffusionPDE",
+    "copy": "基于引导扩散框架的生成式求解器，能够在处理稀疏观测数据的同时，在一个统一模型内并行解决偏微分方程的前向预测与逆属性估计任务。",
+    "tags": [
+      "diffusion-model",
+      "inverse-problem"
+    ],
+    "provider": "inverse-problems, generative",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-diffusion-graph-net",
+    "page": "models",
+    "title": "Diffusion Graph Net",
+    "copy": "专为非结构化流体网格设计的图潜空间扩散模型，可直接从平衡分布中采样出高度非线性的湍流物理状态。",
+    "tags": [
+      "diffusion",
+      "gnn",
+      "turbulence"
+    ],
+    "provider": "cfd, generative",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-eagle-mesh-transformer",
+    "page": "models",
+    "title": "EagleMeshTransformer",
+    "copy": "非稳态流体网格求解器",
+    "tags": [
+      "transformer",
+      "mesh-graph",
+      "fluid-dynamics"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-xpinn",
+    "page": "models",
+    "title": "XPINNs",
+    "copy": "一种基于广义时空域分解的深度学习框架，允许在复杂几何体内的不同子域部署独立的神经网络，从而实现大规模并行化求解。",
+    "tags": [
+      "pinn",
+      "domain-decomposition"
+    ],
+    "provider": "pde-solving",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-cpinn",
+    "page": "models",
+    "title": "cPINN",
+    "copy": "专门为非线性守恒律方程设计的域分解PINN变体，通过在子域边界处强制实现通量连续性以满足严苛的物理守恒要求。",
+    "tags": [
+      "pinn",
+      "conservation-laws",
+      "domain-decomposition"
+    ],
+    "provider": "conservation-laws",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-gpinn",
+    "page": "models",
+    "title": "gPINNs",
+    "copy": "通过将偏微分方程残差的梯度信息额外嵌入到损失函数中，在样本极其稀缺的条件下大幅提高PINN的求解精度。",
+    "tags": [
+      "pinn",
+      "gradient-enhanced"
+    ],
+    "provider": "pde-solving",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "third-party",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-hp-vpinn",
+    "page": "models",
+    "title": "VPINNs",
+    "copy": "将偏微分方程的变分形式（弱形式）与域分解相结合，形成一种稳健的张量驱动深度学习框架。",
+    "tags": [
+      "pinn",
+      "variational-methods"
+    ],
+    "provider": "pde-solving",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-bpinn",
+    "page": "models",
+    "title": "BPINNs",
+    "copy": "将贝叶斯推断与物理约束网络相融合的架构，不仅能够预测物理场的演化，还能提供严谨的不确定性量化。",
+    "tags": [
+      "pinn",
+      "bayesian",
+      "inverse-problems"
+    ],
+    "provider": "uncertainty-quantification",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-sa-pinn",
+    "page": "models",
+    "title": "SA-PINNs",
+    "copy": "引入软注意力机制，让网络在训练过程中动态自适应地调整每个配点的损失权重，有效解决刚性PDE的收敛难题。",
+    "tags": [
+      "pinn",
+      "adaptive-weights",
+      "stiff-pdes"
+    ],
+    "provider": "stiff-pdes",
+    "size": "PyTorch, TensorFlow, JAX",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-fpinn",
+    "page": "models",
+    "title": "FPINNs",
+    "copy": "将分数阶微积分算子整合进物理损失函数中，专门用于求解具有记忆效应和非局部空间特征的分数阶偏微分方程。",
+    "tags": [
+      "pinn",
+      "fractional-pdes"
+    ],
+    "provider": "fractional-pdes",
+    "size": "PyTorch, TensorFlow",
+    "format": "预训练模型",
+    "source": "paper",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-gp-for-to",
+    "page": "models",
+    "title": "GP_for_TO",
+    "copy": "基于物理信息高斯过程的无网格拓扑优化方法",
+    "tags": [
+      "stokes-flow",
+      "topology-optimization",
+      "physics-informed-gaussian-processes"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch/ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-pinnsformer",
+    "page": "models",
+    "title": "PINNsformer",
+    "copy": "以时序建模和注意力机制提升物理信息神经网络求解复杂 PDE 的精度与鲁棒性。",
+    "tags": [
+      "physics-informed-neural-networks",
+      "transformer",
+      "pde-solvers",
+      "scientific-machine-learning"
+    ],
+    "provider": "fluid-dynamics",
+    "size": "PyTorch/ONNX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-u-fno",
+    "page": "models",
+    "title": "U-FNO",
+    "copy": "将U-Net架构与傅里叶神经算子（FNO）深度结合，专门为解决复杂的多相流（Multiphase flow）问题而设计的高效算子网络。",
+    "tags": [
+      "fno",
+      "multiphase-flow",
+      "operator-learning"
+    ],
+    "provider": "multiphase-flow",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-mwt",
+    "page": "models",
+    "title": "MWT",
+    "copy": "采用多小波变换技术学习非线性算子，能够通过紧凑的数据表示高效处理偏微分方程中的多尺度与高频突变特征。",
+    "tags": [
+      "operator-learning",
+      "wavelets",
+      "multiwavelets"
+    ],
+    "provider": "pde-solving",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-fluid-galerkin-transformer",
+    "page": "models",
+    "title": "Galerkin Transformer",
+    "copy": "一种从泛函分析与希尔伯特空间视角出发，将注意力机制重构为无Softmax线性伽辽金投影的算子Transformer。",
+    "tags": [
+      "transformer",
+      "galerkin-projection"
+    ],
+    "provider": "operator-learning",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material",
+    "page": "models",
+    "title": "MACE",
+    "copy": "高阶等变消息传递机器学习势函数",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "mpnn",
+      "dcu"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-uma",
+    "page": "models",
+    "title": "UMA",
+    "copy": "Meta FAIR 跨化学领域通用原子势模型",
+    "tags": [
+      "mlff",
+      "catalysis",
+      "oc20"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-deepmd",
+    "page": "models",
+    "title": "DeePMD",
+    "copy": "深度学习势能函数，支持 PT/TF 双后端",
+    "tags": [
+      "mlff",
+      "deepmd",
+      "lammps",
+      "dcu"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-nep",
+    "page": "models",
+    "title": "NEP",
+    "copy": "神经演化势函数，DCU 上由 MatPL 训练",
+    "tags": [
+      "mlff",
+      "nep",
+      "matpl",
+      "dcu"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-matris",
+    "page": "models",
+    "title": "MatRIS",
+    "copy": "中科院计算所科学智能预训练大模型",
+    "tags": [
+      "mlff",
+      "pretrained",
+      "dcu"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-tace",
+    "page": "models",
+    "title": "TACE",
+    "copy": "Cartesian 张量原子簇展开势能模型",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "ace",
+      "tensor"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-nequix",
+    "page": "models",
+    "title": "Nequix",
+    "copy": "轻量 E(3) 等变材料基础势能模型",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "JAX",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-mattersim",
+    "page": "models",
+    "title": "Mattersim",
+    "copy": "面向多元素温压条件的原子级深度学习模型",
+    "tags": [
+      "mlff",
+      "m3gnet",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-grace",
+    "page": "models",
+    "title": "GRACE",
+    "copy": "Graph Atomic Cluster Expansion 势能框架",
+    "tags": [
+      "mlff",
+      "ace",
+      "graph"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-allegro",
+    "page": "models",
+    "title": "Allegro",
+    "copy": "严格局域 E(3) 等变高扩展势能模型",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "scalable",
+      "nequip"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-mattergen",
+    "page": "models",
+    "title": "Mattergen",
+    "copy": "面向无机晶体材料设计的扩散生成模型。",
+    "tags": [
+      "generative",
+      "diffusion",
+      "crystal",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-equiformer-v3",
+    "page": "models",
+    "title": "Equiformer_v3",
+    "copy": "用于材料结构能量、原子力和应力预测的 SE(3) 等变图注意力势模型。",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "graph-attention",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-esen",
+    "page": "models",
+    "title": "eSEN",
+    "copy": "用于材料结构能量、原子力和应力预测的等变图神经网络势。",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "gnn",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-models-material-nequip",
+    "page": "models",
+    "title": "NequIP",
+    "copy": "基于 SE (3) 等变图神经网络，用于原子体系能量、原子力预测的分子 / 材料势能模型",
+    "tags": [
+      "mlff",
+      "equivariant",
+      "gnn",
+      "materials"
+    ],
+    "provider": "matchem",
+    "size": "PyTorch",
+    "format": "预训练模型",
+    "source": "onescience",
+    "metricLabel": "框架",
+    "action": "开发"
+  },
+  {
+    "id": "seed-apps-abacus",
+    "page": "apps",
+    "title": "ABACUS",
+    "copy": "基于密度泛函理论的第一性原理电子结构与材料模拟软件",
+    "tags": [
+      "材料化学",
+      "DFT",
+      "materials",
+      "quantum"
+    ],
+    "provider": "Materials Science",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=fa860bcd-f8d7-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-adaptivecpp",
+    "page": "apps",
+    "title": "AdaptiveCpp",
+    "copy": "面向 CPU/GPU 的 SYCL 与 C++ 异构并行编译器和运行时",
+    "tags": [
+      "其它",
+      "SYCL",
+      "compiler",
+      "GPU"
+    ],
+    "provider": "Programming Model",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=38bbdeb3-f965-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-astra_toolbox",
+    "page": "apps",
+    "title": "ASTRA Toolbox",
+    "copy": "面向 GPU 加速层析成像与断层重建的高性能工具箱",
+    "tags": [
+      "其它",
+      "tomography",
+      "CT",
+      "GPU"
+    ],
+    "provider": "Imaging",
+    "size": "Python",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=938690ad-f960-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-autodock_gpu",
+    "page": "apps",
+    "title": "AutoDock-GPU",
+    "copy": "面向药物筛选的 GPU 加速分子对接与虚拟筛选软件",
+    "tags": [
+      "生命科学",
+      "drug-discovery",
+      "docking",
+      "GPU"
+    ],
+    "provider": "Drug Discovery",
+    "size": "C++",
+    "format": "GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=2355d55d-f5a3-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-beagle",
+    "page": "apps",
+    "title": "BEAGLE",
+    "copy": "用于系统发育树上序列进化似然计算的高性能生物信息学库",
+    "tags": [
+      "生命科学",
+      "phylogenetics",
+      "GPU"
+    ],
+    "provider": "Bioinformatics",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=5aa1ae8b-3edd-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-bwa",
+    "page": "apps",
+    "title": "BWA",
+    "copy": "基于 BWA-MEM 的 GPU 加速基因序列比对工具",
+    "tags": [
+      "生命科学",
+      "genomics",
+      "alignment",
+      "GPU"
+    ],
+    "provider": "Bioinformatics",
+    "size": "C++",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=112d8f26-3ede-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-cosma",
+    "page": "apps",
+    "title": "COSMA",
+    "copy": "面向分布式内存系统的通信优化矩阵乘法库",
+    "tags": [
+      "其它",
+      "linear-algebra",
+      "MPI",
+      "HPC"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=34db8883-f5ad-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-cupy",
+    "page": "apps",
+    "title": "CuPy",
+    "copy": "面向 GPU 的 NumPy 与 SciPy 风格数组计算库",
+    "tags": [
+      "其它",
+      "Python",
+      "GPU",
+      "array"
+    ],
+    "provider": "Scientific Python",
+    "size": "Python",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=dc131138-f5ad-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-eigen3",
+    "page": "apps",
+    "title": "Eigen3",
+    "copy": "提供矩阵、向量与数值求解器的 C++ 模板线性代数库",
+    "tags": [
+      "其它",
+      "linear-algebra",
+      "C++"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=895d2da4-f96a-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-elpa",
+    "page": "apps",
+    "title": "ELPA",
+    "copy": "面向大规模对称或厄米矩阵特征值问题的高性能求解库",
+    "tags": [
+      "其它",
+      "eigensolver",
+      "MPI",
+      "HPC"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=ffcb92e8-f3f3-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-genomeworks",
+    "page": "apps",
+    "title": "GenomeWorks",
+    "copy": "面向基因组装与序列分析的 GPU 加速开发工具包",
+    "tags": [
+      "生命科学",
+      "genomics",
+      "GPU",
+      "MPI"
+    ],
+    "provider": "Bioinformatics",
+    "size": "C++",
+    "format": "GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=7f2555a5-f96c-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-ginkgo",
+    "page": "apps",
+    "title": "Ginkgo",
+    "copy": "面向稀疏线性代数与迭代求解的高性能数值计算库",
+    "tags": [
+      "其它",
+      "sparse",
+      "solver",
+      "GPU"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=81b84c92-f96d-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-gpublast",
+    "page": "apps",
+    "title": "GPU-Blast",
+    "copy": "面向生物序列搜索与比对的 GPU 加速 BLAST 工具",
+    "tags": [
+      "生命科学",
+      "BLAST",
+      "genomics",
+      "GPU"
+    ],
+    "provider": "Bioinformatics",
+    "size": "C++",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=a682df0a-f96e-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-gpumd",
+    "page": "apps",
+    "title": "GPUMD",
+    "copy": "完全基于 GPU 实现的高效率通用分子动力学模拟软件",
+    "tags": [
+      "材料化学",
+      "MD",
+      "materials",
+      "GPU"
+    ],
+    "provider": "Molecular Dynamics",
+    "size": "C++",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=0e3550e8-3ee0-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-gromacs",
+    "page": "apps",
+    "title": "GROMACS",
+    "copy": "面向生物分子与化学体系的高性能分子动力学模拟软件",
+    "tags": [
+      "生命科学",
+      "MD",
+      "chemistry",
+      "MPI",
+      "GPU"
+    ],
+    "provider": "Molecular Dynamics",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=79f6980f-f3e8-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-hashcat",
+    "page": "apps",
+    "title": "Hashcat",
+    "copy": "面向多种哈希算法的高性能密码恢复与审计工具",
+    "tags": [
+      "其它",
+      "security",
+      "GPU"
+    ],
+    "provider": "Security",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=fb77220b-f5a9-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-hoomd_blue",
+    "page": "apps",
+    "title": "HOOMD-blue",
+    "copy": "面向软物质体系的 GPU 加速分子动力学与蒙特卡罗模拟软件",
+    "tags": [
+      "材料化学",
+      "MD",
+      "soft-matter",
+      "GPU"
+    ],
+    "provider": "Molecular Dynamics",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=8ab9aebe-f986-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-hypre",
+    "page": "apps",
+    "title": "HYPRE",
+    "copy": "提供多重网格方法的并行稀疏线性系统求解与预条件库",
+    "tags": [
+      "其它",
+      "multigrid",
+      "solver",
+      "MPI"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=6eb76d28-f5ae-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-kokkos",
+    "page": "apps",
+    "title": "Kokkos",
+    "copy": "提供并行执行与内存抽象的 C++ 性能可移植编程模型",
+    "tags": [
+      "其它",
+      "parallel",
+      "C++",
+      "GPU"
+    ],
+    "provider": "Programming Model",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=4b124510-f970-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-lammps",
+    "page": "apps",
+    "title": "LAMMPS",
+    "copy": "大规模并行经典/MLFF 分子动力学软件",
+    "tags": [
+      "材料化学",
+      "MD",
+      "MPI",
+      "Kokkos",
+      "DCU"
+    ],
+    "provider": "MD",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://gitee.com/onescience-ai/onescience/blob/main/examples/matchem/README.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-vasp",
+    "page": "apps",
+    "title": "VASP",
+    "copy": "商业 DFT 第一性原理材料模拟软件",
+    "tags": [
+      "材料化学",
+      "DFT",
+      "first-principles",
+      "MPI",
+      "DCU"
+    ],
+    "provider": "DFT",
+    "size": "Fortran",
+    "format": "CPU/GPU/MPI",
+    "href": "https://gitee.com/onescience-ai/onescience/tree/main/examples/matchem/tools/vasp",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-cp2k",
+    "page": "apps",
+    "title": "CP2K",
+    "copy": "面向分子与材料体系的并行 DFT/MD 软件",
+    "tags": [
+      "材料化学",
+      "DFT",
+      "MD",
+      "MPI",
+      "DCU"
+    ],
+    "provider": "DFT/MD",
+    "size": "Fortran/C",
+    "format": "CPU/GPU/MPI",
+    "href": "https://gitee.com/onescience-ai/onescience/blob/main/examples/matchem/README.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-deepmd-kit",
+    "page": "apps",
+    "title": "DeePMD-kit",
+    "copy": "深度学习势能函数训练与推理框架",
+    "tags": [
+      "材料化学",
+      "MLFF",
+      "deep-learning",
+      "DCU"
+    ],
+    "provider": "MLFF",
+    "size": "C++/Python",
+    "format": "CPU/GPU/MPI",
+    "href": "https://gitee.com/onescience-ai/onescience/blob/main/examples/matchem/dp/dp_install.sh",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-matpl",
+    "page": "apps",
+    "title": "MatPL",
+    "copy": "NEP 等机器学习势训练框架，含 DCU 算子",
+    "tags": [
+      "材料化学",
+      "MLFF",
+      "NEP",
+      "DCU"
+    ],
+    "provider": "MLFF",
+    "size": "C++/Python",
+    "format": "GPU/MPI",
+    "href": "https://gitee.com/onescience-ai/onescience/blob/main/examples/matchem/nep/matpl_install.sh",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-magma",
+    "page": "apps",
+    "title": "MAGMA",
+    "copy": "面向异构 CPU/GPU 平台的高性能稠密线性代数计算库",
+    "tags": [
+      "其它",
+      "linear-algebra",
+      "GPU"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=6bfd3815-f41a-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-namd",
+    "page": "apps",
+    "title": "NAMD",
+    "copy": "面向大规模生物分子体系的高性能并行分子动力学模拟软件",
+    "tags": [
+      "生命科学",
+      "MD",
+      "biomolecular",
+      "GPU"
+    ],
+    "provider": "Molecular Dynamics",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=5f31ffe2-f417-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-nekrs",
+    "page": "apps",
+    "title": "nekRS",
+    "copy": "面向 HPC 应用的快速可扩展谱元 CFD 求解器",
+    "tags": [
+      "流体仿真",
+      "CFD",
+      "spectral-element",
+      "MPI"
+    ],
+    "provider": "CFD",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=27b19af1-3ee4-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-nwchem",
+    "page": "apps",
+    "title": "NWChem",
+    "copy": "面向高性能计算环境的开源量子化学与计算化学软件",
+    "tags": [
+      "材料化学",
+      "quantum-chemistry",
+      "DFT",
+      "MPI"
+    ],
+    "provider": "Computational Chemistry",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=b4ffe397-f413-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-openfoam",
+    "page": "apps",
+    "title": "OpenFOAM",
+    "copy": "面向流体、多相与传热问题的开源 CFD 仿真平台",
+    "tags": [
+      "流体仿真",
+      "CFD",
+      "multiphysics",
+      "MPI"
+    ],
+    "provider": "CFD",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=f7bb69bb-f984-11ef-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-openmm",
+    "page": "apps",
+    "title": "OpenMM",
+    "copy": "兼具库与独立应用形态的高性能分子模拟工具包",
+    "tags": [
+      "生命科学",
+      "MD",
+      "simulation",
+      "GPU"
+    ],
+    "provider": "Molecular Dynamics",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=36bbb575-f40b-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-petsc",
+    "page": "apps",
+    "title": "PETSc",
+    "copy": "面向偏微分方程与科学计算的并行数值求解工具包",
+    "tags": [
+      "其它",
+      "PDE",
+      "solver",
+      "MPI"
+    ],
+    "provider": "Math Libraries",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=adfc07e9-3ee5-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-picongpu",
+    "page": "apps",
+    "title": "PIConGPU",
+    "copy": "面向激光等离子体研究的性能可移植粒子网格模拟框架",
+    "tags": [
+      "其它",
+      "plasma",
+      "particle-in-cell",
+      "GPU"
+    ],
+    "provider": "Plasma Physics",
+    "size": "C++",
+    "format": "GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=d386d847-f404-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-pyfr",
+    "page": "apps",
+    "title": "PyFR",
+    "copy": "基于通量重构方法的高阶可扩展 CFD 计算框架",
+    "tags": [
+      "流体仿真",
+      "CFD",
+      "high-order",
+      "GPU"
+    ],
+    "provider": "CFD",
+    "size": "Python",
+    "format": "GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=21da2b12-f3f1-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-relion",
+    "page": "apps",
+    "title": "RELION",
+    "copy": "面向冷冻电镜单颗粒分析的图像处理与三维重构软件",
+    "tags": [
+      "生命科学",
+      "cryo-EM",
+      "imaging",
+      "GPU"
+    ],
+    "provider": "Imaging",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=6162a45f-f3ef-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-sparta",
+    "page": "apps",
+    "title": "SPARTA",
+    "copy": "面向稀薄气体流动的并行 DSMC 粒子模拟软件",
+    "tags": [
+      "流体仿真",
+      "DSMC",
+      "rarefied-gas",
+      "MPI"
+    ],
+    "provider": "CFD",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=67fc6a44-3ee6-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-specfem3d",
+    "page": "apps",
+    "title": "SPECFEM3D",
+    "copy": "用于三维地震波传播的谱元法地球物理模拟软件",
+    "tags": [
+      "其它",
+      "geophysics",
+      "seismic",
+      "GPU"
+    ],
+    "provider": "Geophysics",
+    "size": "C++",
+    "format": "CPU/GPU/MPI",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=aa4ba8c2-f3ec-11ef-bb42-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-apps-stdgpu",
+    "page": "apps",
+    "title": "stdgpu",
+    "copy": "提供 STL 风格接口的高效 GPU 数据结构库",
+    "tags": [
+      "其它",
+      "data-structures",
+      "C++",
+      "GPU"
+    ],
+    "provider": "Programming Model",
+    "size": "C++",
+    "format": "GPU",
+    "href": "https://dos.sourcefind.cn:50275/portal/#/installation?id=d5e12516-3ee6-11f1-be71-0242ac170002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-training-pytorch",
+    "page": "frameworks",
+    "title": "PyTorch深度学习框架",
+    "copy": "硬件支持：CPU/GPU；提供 DCU 安装适配入口，适合深度学习训练和动态图研发。",
+    "tags": [
+      "deep-learning",
+      "dynamic-graph",
+      "DCU适配"
+    ],
+    "provider": "PyTorch",
+    "size": "Python/C++/CUDA",
+    "format": "CPU/GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=04749079-6b33-11ef-b472-005056904552&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-training-jax高性能数值计算库",
+    "page": "frameworks",
+    "title": "JAX高性能数值计算库",
+    "copy": "硬件支持：CPU/GPU/TPU；提供 DCU 安装适配入口，适合自动微分、JIT 与函数式数值计算。",
+    "tags": [
+      "autograd",
+      "JIT",
+      "DCU适配"
+    ],
+    "provider": "JAX",
+    "size": "Python/CUDA",
+    "format": "CPU/GPU/TPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=57f974b4-6b39-11ef-b472-005056904552&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-training-nvidia-transformerengine",
+    "page": "frameworks",
+    "title": "NVIDIA TransformerEngine",
+    "copy": "硬件支持：GPU；提供 DCU 安装入口和 FlagOS 适配仓库，面向 Transformer FP8 训练加速。",
+    "tags": [
+      "Transformer",
+      "FP8",
+      "DCU适配",
+      "FlagOS"
+    ],
+    "provider": "TransformerEngine",
+    "size": "Python/CUDA",
+    "format": "GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=d091bbbf-fb10-11ef-915b-0242ac160002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-training-verl大语言模型训练框架",
+    "page": "frameworks",
+    "title": "verl大语言模型训练框架",
+    "copy": "硬件支持：CPU/GPU；提供 FlagOS 适配仓库，专注大模型强化学习与 RLHF 训练。",
+    "tags": [
+      "LLM",
+      "RLHF",
+      "FlagOS"
+    ],
+    "provider": "verl",
+    "size": "Python",
+    "format": "CPU/GPU",
+    "href": "https://github.com/flagos-ai/verl-FL",
+    "source": "third-party",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-training-onescience",
+    "page": "frameworks",
+    "title": "OneScience 科研计算与数据科学平台",
+    "copy": "硬件支持：CPU/GPU；提供 OneScience Gitee/GitHub 入口，面向科研工作流、并行计算和科学数据管理。",
+    "tags": [
+      "scientific-computing",
+      "workflow-engine",
+      "OneScience"
+    ],
+    "provider": "OneScience",
+    "size": "Python/C++",
+    "format": "CPU/GPU",
+    "href": "https://gitee.com/onescience-ai/onescience",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-parallel-deepspeed分布式训练优化库",
+    "page": "frameworks",
+    "title": "DeepSpeed分布式训练优化库",
+    "copy": "硬件支持：CPU/GPU；提供 DCU 安装适配入口，覆盖 ZeRO、混合精度训练和分布式显存优化。",
+    "tags": [
+      "ZeRO",
+      "distributed-training",
+      "DCU适配"
+    ],
+    "provider": "DeepSpeed",
+    "size": "Python/CUDA",
+    "format": "CPU/GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=e5892d54-6b3b-11ef-b472-005056904552&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-parallel-megatron-lm大规模模型并行训练框架",
+    "page": "frameworks",
+    "title": "Megatron-LM大规模模型并行训练框架",
+    "copy": "硬件支持：GPU；提供 DCU 安装入口和 FlagOS 适配仓库，支持模型并行、流水线并行和数据并行。",
+    "tags": [
+      "model-parallelism",
+      "pipeline-parallelism",
+      "FlagOS"
+    ],
+    "provider": "Megatron-LM",
+    "size": "Python/CUDA",
+    "format": "GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=af3d2407-bbba-11f0-98e6-0242ac130002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-inference",
+    "page": "frameworks",
+    "title": "vLLM高性能LLM推理引擎",
+    "copy": "硬件支持：GPU；提供 DCU 安装入口和 FlagOS 适配仓库，面向高吞吐 LLM 推理服务。",
+    "tags": [
+      "llm-inference",
+      "PagedAttention",
+      "FlagOS"
+    ],
+    "provider": "vLLM",
+    "size": "Python/CUDA",
+    "format": "GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=9385225c-6b7a-11ef-bf92-005056904552&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-frameworks-framework-inference-sglang大语言模型服务框架",
+    "page": "frameworks",
+    "title": "SGLang大语言模型服务框架",
+    "copy": "硬件支持：GPU；提供 DCU 安装适配入口，支持高效推理、RadixAttention 和结构化生成。",
+    "tags": [
+      "llm-inference",
+      "RadixAttention",
+      "DCU适配"
+    ],
+    "provider": "SGLang",
+    "size": "Python/CUDA",
+    "format": "GPU",
+    "href": "https://das.sourcefind.cn:55011/portal/#/installation?id=95f4fe5b-2cd9-11f1-ac5a-0242ac130002&type=frame",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-workflow",
+    "page": "skills",
+    "title": "科研需求理解",
+    "copy": "面向科研人员真实任务的用户入口，用于理解接入数据、改模型、跑远程、做评估等自然语言需求。",
+    "tags": [
+      "入口层",
+      "workflow",
+      "AI4Science"
+    ],
+    "provider": "onescience-workflow",
+    "size": "用户入口",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-workflow/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-role",
+    "page": "skills",
+    "title": "角色拆分与交接",
+    "copy": "在用户工作流明确后识别当前负责人，选择最小角色链，并交接给执行层技能。",
+    "tags": [
+      "协作与路由层",
+      "role",
+      "handoff"
+    ],
+    "provider": "onescience-role",
+    "size": "角色层",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-role/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-skill",
+    "page": "skills",
+    "title": "执行技能路由",
+    "copy": "把工作流或角色层结论路由到硬件感知、代码实现、运行、排查或安装链路。",
+    "tags": [
+      "协作与路由层",
+      "router",
+      "pipeline"
+    ],
+    "provider": "onescience-skill",
+    "size": "执行入口",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-skill/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-hardware",
+    "page": "skills",
+    "title": "硬件环境感知",
+    "copy": "识别远程 Host、DCU/GPU 类型、队列、模块环境和运行约束，为后续执行选择合适后端。",
+    "tags": [
+      "执行层",
+      "hardware",
+      "DCU/GPU"
+    ],
+    "provider": "onescience-hardware",
+    "size": "硬件画像",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-hardware/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-coder",
+    "page": "skills",
+    "title": "代码实现与改造",
+    "copy": "面向 OneScience 代码库选择最小改造路径，并完成 DataPipe、模型、组件或配置相关代码实现。",
+    "tags": [
+      "执行层",
+      "coder",
+      "model"
+    ],
+    "provider": "onescience-coder",
+    "size": "代码实现",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-coder/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-runtime",
+    "page": "skills",
+    "title": "远程作业运行",
+    "copy": "提交远程作业，完成主机发现、硬件探测、后端选择、脚本渲染、作业提交与日志同步。",
+    "tags": [
+      "执行层",
+      "runtime",
+      "SLURM"
+    ],
+    "provider": "onescience-runtime",
+    "size": "远程执行",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-runtime/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-debug",
+    "page": "skills",
+    "title": "测试排障",
+    "copy": "映射模型测试、Earth DataPipe 测试、完整训练或推理流程测试路径，用于验证和问题定位。",
+    "tags": [
+      "保障层",
+      "debug",
+      "test"
+    ],
+    "provider": "onescience-debug",
+    "size": "测试排障",
+    "format": "SKILL.md",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/skills/onescience-debug/SKILL.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  },
+  {
+    "id": "seed-skills-onescience-installer",
+    "page": "skills",
+    "title": "环境安装与验证",
+    "copy": "在远程硬件环境安装 OneScience，完成硬件探测、DCU/GPU 判别、领域确认、安装与验证。",
+    "tags": [
+      "保障层",
+      "installer",
+      "environment"
+    ],
+    "provider": "onescience-installer",
+    "size": "环境安装",
+    "format": "安装说明",
+    "href": "https://gitee.com/onescience-ai/oneskills/blob/master/install/README.md",
+    "source": "onescience",
+    "metricLabel": "规模",
+    "action": "安装"
+  }
+]

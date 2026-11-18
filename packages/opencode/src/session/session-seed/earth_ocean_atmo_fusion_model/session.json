@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_173de5f78ffemATonCgBtx7ECA",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "hidden-cactus",
+    "directory": "/data/case",
+    "title": "地球科学 · 海气融合预测模型搭建",
+    "version": "0.0.0-dev-202606010321",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1780467474567,
+    "time_updated": 1780469093468,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "data/zhaozn1/case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.04849252399999999,
+    "tokens_input": 22802,
+    "tokens_output": 29233,
+    "tokens_reasoning": 7240,
+    "tokens_cache_read": 1887488,
+    "tokens_cache_write": 0
+  }
+]

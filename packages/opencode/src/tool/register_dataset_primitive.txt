@@ -1,0 +1,12 @@
+Register a private data.load-style dataset description for an Already (alr_*) trainable catalog record.
+
+Call this AFTER dataset_report succeeds (or when an Already id is already known).
+
+Pass:
+- already_id: the alr_* id returned by dataset_report / catalog
+- title (optional): display name; defaults to Already title
+- description (optional): one-line summary for agents
+- data_schema (optional): columns / variables / shape
+- usage_notes (optional): how to use or caveats
+
+Do not invent alr_ ids. Do not call this instead of dataset_report.

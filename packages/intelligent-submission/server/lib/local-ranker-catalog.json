@@ -1,0 +1,35 @@
+{
+  "ranker-8b": {
+    "label": "8B Ranker",
+    "base": "LLM-Research/Meta-Llama-3-8B",
+    "baseRevision": "3c106cb086f5e199463f5ff08a1c3ebf2e7bc8dd",
+    "adapter": "biandx/Llama-3-8B",
+    "revision": "c4b57b5d1d1704fad0b0f011db8afff46df022ea",
+    "manifest": "fec325f08ea1c48d1c2ffdbb8873d19f668ef15a93e7e64640fe39a4a009d5c4",
+    "downloadGB": 16.2,
+    "diskGB": 32,
+    "license": "Meta Llama 3 Community License"
+  },
+  "ranker-3b": {
+    "label": "3B Ranker",
+    "base": "Qwen/Qwen2.5-3B",
+    "baseRevision": "5defd2796acd3cb2051bb4c787eddc7f8f35e113",
+    "adapter": "biandx/Qwen-2.5-3B",
+    "revision": "012b31592857de8069610e30d4fd57db4e09f9a0",
+    "manifest": "723e336996c75b7f07378dd22fd0d99941a3141b8ba092b1a35c1b7de8879461",
+    "downloadGB": 6.3,
+    "diskGB": 22,
+    "license": "Qwen Research License（商业使用需另行授权）"
+  },
+  "ranker-0.6b": {
+    "label": "0.6B Ranker",
+    "base": "Qwen/Qwen3-0.6B",
+    "baseRevision": "09b42cad3d112e832108974449ccb5e8e0f5b5d1",
+    "adapter": "biandx/Qwen-3-0.6B",
+    "revision": "2f2163e52bae42a3d84abd1498b5d78bbe8c5bce",
+    "manifest": "1c9660d2e258090a2abcfb674d2ad10fe50b3bd6bfcbad4ac6579a9c1c203fae",
+    "downloadGB": 1.6,
+    "diskGB": 16,
+    "license": "Apache 2.0"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_103251332ffelcaGi7spx1esL9",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "silent-nebula",
+    "directory": "/data/case",
+    "title": "地球科学 · 魔搭 FuXi 训练 smoke 验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782358666446,
+    "time_updated": 1782358940925,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/zhaozn1/modelscope_test",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.032122226999999996,
+    "tokens_input": 47057,
+    "tokens_output": 6259,
+    "tokens_reasoning": 2517,
+    "tokens_cache_read": 1108224,
+    "tokens_cache_write": 0
+  }
+]

@@ -1,0 +1,102 @@
+[data-component="science-text-body"] {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+[data-component="science-report-images"] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+[data-component="science-report-images"] [data-slot="science-report-images-label"] {
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-weak);
+}
+
+[data-component="science-report-images"] [data-slot="science-report-images-grid"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image"] {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  border: 1px solid var(--border-weaker-base);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--background-base);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 120ms ease;
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image"]:hover {
+  border-color: var(--border-base);
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image-thumb"] {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  max-height: 220px;
+  object-fit: contain;
+  background: var(--background-stronger);
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image-label"] {
+  padding: 8px 10px;
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-base);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-top: 1px solid var(--border-weaker-base);
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image-loading"][data-state="failed"] {
+  min-height: 160px;
+  border-radius: 8px;
+  border: 1px solid var(--border-weaker-base);
+  background: var(--background-stronger);
+  display: flex;
+  align-items: flex-end;
+  padding: 8px 10px;
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image-loading"][data-state="failed"] [data-slot="science-artifact-image-label"] {
+  padding: 0;
+  border-top: none;
+}
+
+[data-component="science-report-images"] [data-slot="science-artifact-image-loading"] {
+  min-height: 160px;
+  border-radius: 8px;
+  border: 1px solid var(--border-weaker-base);
+  background: linear-gradient(
+    90deg,
+    var(--background-stronger) 0%,
+    var(--background-base) 50%,
+    var(--background-stronger) 100%
+  );
+  background-size: 200% 100%;
+  animation: science-artifact-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes science-artifact-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

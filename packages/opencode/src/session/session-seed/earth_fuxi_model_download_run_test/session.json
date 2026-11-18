@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_12afd8b95ffeFdtfOOORfsnETp",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "brave-harbor",
+    "directory": "/data/case",
+    "title": "地球科学 · FuXi 模型下载与运行测试",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1781690168426,
+    "time_updated": 1781694968260,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/classic_case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.044262119999999995,
+    "tokens_input": 69892,
+    "tokens_output": 5332,
+    "tokens_reasoning": 2894,
+    "tokens_cache_read": 1848960,
+    "tokens_cache_write": 0
+  }
+]

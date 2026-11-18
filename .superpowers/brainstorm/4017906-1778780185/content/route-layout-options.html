@@ -1,0 +1,46 @@
+<h2>OneScience Web Framework Direction</h2>
+<p class="subtitle">Showing the proposed route split and visual hierarchy before implementation.</p>
+
+<div class="cards">
+  <div class="card" data-choice="recommended" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mock-nav">/ Product Landing: top dropdown nav, philosophy, resources, highlights, video, achievements, join, contact</div>
+      <div style="display:grid;grid-template-columns:170px 1fr;gap:12px;margin-top:12px">
+        <div class="mock-sidebar">/home Workspace Shell<br><br>首页<br>模型开发<br>模型训练<br>数据管理<br>模型管理<br><br>数据集<br>模型库<br>Skills<br>案例<br>文档</div>
+        <div class="mock-content">
+          <div class="placeholder" style="height:70px">OneScience 智能建模工作台 prompt area</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px">
+            <div class="placeholder">地球科学</div>
+            <div class="placeholder">生命信息</div>
+            <div class="placeholder">材料化学</div>
+            <div class="placeholder">流体仿真</div>
+          </div>
+          <div class="placeholder" style="height:60px;margin-top:10px">数据概览 / 最近项目 / 活动动态</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Recommended: Split Landing and Workspace</h3>
+      <p><strong>/</strong> is the OneScience product site. <strong>/home</strong>, <strong>/datasets</strong>, <strong>/models</strong>, <strong>/skills</strong>, etc. use the white workspace shell from the screenshots. <strong>/code</strong> embeds/reuses the current opencode development interface.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="minimal" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mock-nav">/ OneScience landing with dropdowns</div>
+      <div class="mock-content" style="margin-top:12px">
+        <div class="placeholder">Simple card pages for resources</div>
+        <div class="placeholder">Separate /dev remains opencode</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Minimal Change</h3>
+      <p>Keep most current routes and only polish copy, cards, and navigation. Lower risk, but less aligned with the provided home.png workspace frame.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Key Assumption To Confirm</h3>
+  <p>The implementation will make <strong>/code</strong> the route for the original opencode coding experience. The old <strong>/dev</strong> can redirect to <strong>/code</strong> for compatibility.</p>
+</div>

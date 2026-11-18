@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_10bffedbbffeAnlewduYPOpjBz",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "shiny-falcon",
+    "directory": "/data/case",
+    "title": "PDE · NS 方程多模型对比评测",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1782210105924,
+    "time_updated": 1782228566261,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/songzhl",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.06285877600000002,
+    "tokens_input": 41808,
+    "tokens_output": 23158,
+    "tokens_reasoning": 15182,
+    "tokens_cache_read": 3121792,
+    "tokens_cache_write": 0
+  }
+]

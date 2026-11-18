@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-25T09:45:16Z",
+  "sourceDatabase": "/data/root/data/opencode.db.20260625",
+  "sessionId": "ses_1033535eaffeFd2OKFwlyBG9bl",
+  "title": "生命科学 · 魔搭 ProteinMPNN 训练 smoke 验证",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/zhaozn1/modelscope_test",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 34,
+    "parts": 154,
+    "sessionMessages": 2,
+    "todos": 5
+  }
+}

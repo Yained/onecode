@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-23T06:39:58Z",
+  "sourceDatabase": "/root/.local/share/opencode/opencode-main.db",
+  "sessionId": "ses_173de5f78ffemATonCgBtx7ECA",
+  "title": "地球科学 · 海气融合预测模型搭建",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/data/zhaozn1/case",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 47,
+    "parts": 190,
+    "sessionMessages": 2,
+    "todos": 6
+  }
+}

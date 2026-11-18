@@ -1,0 +1,86 @@
+[data-component="modelscope-download-panel"] {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-weak-base);
+  background: var(--surface-weak);
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-header"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-title"] {
+  font-size: var(--font-size-xsmall);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-strong);
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-active"] {
+  font-size: var(--font-size-xsmall);
+  color: var(--text-weak);
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-header-actions"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-cancel"] {
+  height: 24px;
+  min-height: 24px;
+  padding: 0 8px;
+  font-size: var(--font-size-xsmall);
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-file"] {
+  font-size: var(--font-size-xsmall);
+  color: var(--text-base);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-bar"] {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--background-stronger);
+  overflow: hidden;
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-bar-fill"] {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--icon-interactive-muted);
+  transition: width 0.2s ease;
+}
+
+[data-component="modelscope-download-panel"][data-starting] [data-slot="modelscope-download-bar-fill"] {
+  width: 35% !important;
+  animation: modelscope-download-indeterminate 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes modelscope-download-indeterminate {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(220%);
+  }
+}
+
+[data-component="modelscope-download-panel"] [data-slot="modelscope-download-meta"] {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: var(--font-size-xsmall);
+  color: var(--text-weak);
+}

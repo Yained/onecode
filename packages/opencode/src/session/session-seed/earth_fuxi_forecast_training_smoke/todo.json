@@ -1,0 +1,5 @@
+[{"session_id":"ses_1109c4216ffe02IxWfmOd93yyu","content":"下载 FuXi 模型到 modelscope/hub/models/OneScience/FuXi","status":"completed","priority":"high","position":0,"time_created":1782133653502,"time_updated":1782133653502},
+{"session_id":"ses_1109c4216ffe02IxWfmOd93yyu","content":"加载 OneScience workflow/role skill，识别领域画像与任务阶段","status":"completed","priority":"high","position":1,"time_created":1782133653502,"time_updated":1782133653502},
+{"session_id":"ses_1109c4216ffe02IxWfmOd93yyu","content":"定位训练入口与配置方式，生成 training_config","status":"completed","priority":"high","position":2,"time_created":1782133653502,"time_updated":1782133653502},
+{"session_id":"ses_1109c4216ffe02IxWfmOd93yyu","content":"生成 fake data + 预检 + 执行 short 阶段 smoke training","status":"completed","priority":"high","position":3,"time_created":1782133653502,"time_updated":1782133653502},
+{"session_id":"ses_1109c4216ffe02IxWfmOd93yyu","content":"收集产物：training_config, training_log, checkpoint, validation_summary","status":"completed","priority":"high","position":4,"time_created":1782133653502,"time_updated":1782133653502}]

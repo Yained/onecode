@@ -1,0 +1,117 @@
+<h2>OneScience Product Architecture: Resource Library -> AI Primitives -> Agent Runtime</h2>
+<p class="subtitle">A first product map for turning datasets, models, apps, operators, and verified code into callable AI primitives.</p>
+
+<div class="mockup">
+  <div class="mockup-header">System Shape</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px;align-items:stretch">
+      <div style="border:1px solid #d7dee8;border-radius:8px;padding:14px;background:#fbfcfe">
+        <div class="label">Layer 1</div>
+        <h3 style="margin-top:4px">Foundation Resources</h3>
+        <p style="margin:6px 0 12px;color:#526071">Human-editable catalog. Users add and maintain entries.</p>
+        <div style="display:grid;gap:8px">
+          <div class="placeholder">Datasets / OneData</div>
+          <div class="placeholder">Model Library</div>
+          <div class="placeholder">App Library</div>
+          <div class="placeholder">Operators</div>
+          <div class="placeholder">Verified OneScience Code</div>
+        </div>
+      </div>
+
+      <div style="border:2px solid #2f6fed;border-radius:8px;padding:14px;background:#f5f8ff">
+        <div class="label">Layer 2</div>
+        <h3 style="margin-top:4px">Primitive Factory</h3>
+        <p style="margin:6px 0 12px;color:#526071">Converts resources into agent-callable primitives with contracts.</p>
+        <div style="display:grid;gap:8px">
+          <div style="background:white;border:1px solid #c8d6f7;border-radius:7px;padding:10px">
+            <strong>Primitive Metadata</strong><br>
+            <span style="color:#667085">intent, domain, tags, source resource</span>
+          </div>
+          <div style="background:white;border:1px solid #c8d6f7;border-radius:7px;padding:10px">
+            <strong>Capability Contract</strong><br>
+            <span style="color:#667085">inputs, outputs, constraints, examples</span>
+          </div>
+          <div style="background:white;border:1px solid #c8d6f7;border-radius:7px;padding:10px">
+            <strong>Execution Adapter</strong><br>
+            <span style="color:#667085">download, import, run, evaluate, compose</span>
+          </div>
+          <div style="background:white;border:1px solid #c8d6f7;border-radius:7px;padding:10px">
+            <strong>Quality State</strong><br>
+            <span style="color:#667085">draft -> reviewed -> verified -> deprecated</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="border:1px solid #d7dee8;border-radius:8px;padding:14px;background:#fbfcfe">
+        <div class="label">Layer 3</div>
+        <h3 style="margin-top:4px">Agent Use</h3>
+        <p style="margin:6px 0 12px;color:#526071">Primitive registry becomes the shared tool vocabulary.</p>
+        <div style="display:grid;gap:8px">
+          <div class="placeholder">OneSkills Skill Router</div>
+          <div class="placeholder">Coder / Runtime / Hardware Skills</div>
+          <div class="placeholder">Workflow Assembly</div>
+          <div class="placeholder">MCP / HTTP Primitive API</div>
+          <div class="placeholder">Code Page Recommendations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Proposed Navigation</h3>
+  <div class="options" data-multiselect>
+    <div class="option" data-choice="resources" onclick="toggleSelect(this)">
+      <div class="letter">A</div>
+      <div class="content">
+        <h3>Resource Center</h3>
+        <p>Datasets, models, apps, operators, and verified code remain separate editable catalogs.</p>
+      </div>
+    </div>
+    <div class="option" data-choice="primitive_factory" onclick="toggleSelect(this)">
+      <div class="letter">B</div>
+      <div class="content">
+        <h3>Primitive Factory</h3>
+        <p>A new workspace for converting resources into AI primitives and managing contracts.</p>
+      </div>
+    </div>
+    <div class="option" data-choice="agent_registry" onclick="toggleSelect(this)">
+      <div class="letter">C</div>
+      <div class="content">
+        <h3>Agent Registry</h3>
+        <p>Shows which primitives are ready for OneSkills, agents, workflows, and MCP-style calls.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Core Product Decision</h3>
+  <p>Should AI primitives be a separate first-class asset type, or simply a generated view over resources?</p>
+  <div class="cards">
+    <div class="card" data-choice="first_class" onclick="toggleSelect(this)">
+      <div class="card-image">
+        <div class="mock-nav">Resources | Primitives | Agents</div>
+        <div style="padding:12px">
+          <div class="placeholder">Primitive detail: contract, examples, source resources, callable endpoint</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Recommended: First-class primitives</h3>
+        <p>Resources are source materials; primitives are operational contracts agents can call.</p>
+      </div>
+    </div>
+    <div class="card" data-choice="generated_view" onclick="toggleSelect(this)">
+      <div class="card-image">
+        <div class="mock-nav">Resources with Primitive Badges</div>
+        <div style="padding:12px">
+          <div class="placeholder">Each resource card gets generated primitive metadata inline</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Lightweight: Generated view</h3>
+        <p>Faster to ship, but weak for lifecycle, validation, and reusable agent contracts.</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-24T02:38:38Z",
+  "sourceDatabase": "/data/root/data/opencode.db",
+  "sessionId": "ses_1109c4216ffe02IxWfmOd93yyu",
+  "title": "地球科学 · FuXi 预报模型训练冒烟验证",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/classic_case",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 20,
+    "parts": 108,
+    "sessionMessages": 2,
+    "todos": 5
+  }
+}

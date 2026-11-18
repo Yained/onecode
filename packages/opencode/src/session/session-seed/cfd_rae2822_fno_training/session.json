@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_12c59a12fffe4xD0VPNsTHQ2iO",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "silent-wizard",
+    "directory": "/data/case",
+    "title": "CFD · RAE2822 翼型 FNO 训练流程",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1781667356368,
+    "time_updated": 1781679360991,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/classic_case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"default\"}",
+    "cost": 0.09847045700000003,
+    "tokens_input": 115769,
+    "tokens_output": 21733,
+    "tokens_reasoning": 12096,
+    "tokens_cache_read": 5153024,
+    "tokens_cache_write": 0
+  }
+]

@@ -1,0 +1,103 @@
+<h2>OneScience Product Shape v2</h2>
+<p class="subtitle">Based on your selection: resources stay editable, primitives become first-class assets, and agents consume the primitive registry.</p>
+
+<div class="mockup">
+  <div class="mockup-header">Navigation Model</div>
+  <div class="mockup-body">
+    <div style="display:grid;grid-template-columns:220px 1fr;gap:16px;min-height:520px">
+      <div style="border-right:1px solid #d7dee8;padding-right:14px">
+        <div class="mock-nav" style="display:grid;gap:8px">
+          <strong>OneScience</strong>
+          <div class="placeholder">Workbench</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">Resource Center</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">Primitive Factory</div>
+          <div class="placeholder" style="border-color:#2f6fed;background:#eef4ff">Agent Registry</div>
+          <div class="placeholder">Code / Verified Resources</div>
+          <div class="placeholder">Runs / Evaluations</div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:14px">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+          <div style="border:1px solid #d7dee8;border-radius:8px;padding:12px;background:#fbfcfe">
+            <div class="label">1. Resource Center</div>
+            <h3>基础资源库</h3>
+            <p style="color:#526071">数据集、模型库、应用库、算子、验证代码。</p>
+            <div class="placeholder">User adds resource</div>
+            <div class="placeholder">Admin verifies source</div>
+            <div class="placeholder">Resource can spawn primitives</div>
+          </div>
+          <div style="border:2px solid #2f6fed;border-radius:8px;padding:12px;background:#f5f8ff">
+            <div class="label">2. Primitive Factory</div>
+            <h3>AI 原语工厂</h3>
+            <p style="color:#526071">把资源转成可调用、可组合、可评测的原语。</p>
+            <div class="placeholder">Define contract</div>
+            <div class="placeholder">Attach adapter</div>
+            <div class="placeholder">Run validation</div>
+          </div>
+          <div style="border:1px solid #d7dee8;border-radius:8px;padding:12px;background:#fbfcfe">
+            <div class="label">3. Agent Registry</div>
+            <h3>智能体注册表</h3>
+            <p style="color:#526071">OneSkills 和智能体通过统一描述查找与调用原语。</p>
+            <div class="placeholder">Search by task intent</div>
+            <div class="placeholder">Use in workflow</div>
+            <div class="placeholder">Track run quality</div>
+          </div>
+        </div>
+
+        <div style="border:1px solid #d7dee8;border-radius:8px;padding:14px;background:white">
+          <div class="label">Primitive Detail Page</div>
+          <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:16px">
+            <div>
+              <h3>GraphCast Forecast Primitive</h3>
+              <p style="color:#526071">Generated from verified OneScience code + model resource + ERA5 dataset resource.</p>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="placeholder" style="display:inline-block">domain: 地球科学</span>
+                <span class="placeholder" style="display:inline-block">type: model.run</span>
+                <span class="placeholder" style="display:inline-block">status: verified</span>
+              </div>
+              <div style="margin-top:12px;display:grid;gap:8px">
+                <div class="placeholder">Inputs: date range, variables, checkpoint, region</div>
+                <div class="placeholder">Outputs: forecast tensor, metrics, report artifact</div>
+                <div class="placeholder">Constraints: GPU/DCU profile, data format, license</div>
+              </div>
+            </div>
+            <div>
+              <div class="label">Agent-facing Contract</div>
+              <pre style="background:#111827;color:#dbeafe;border-radius:8px;padding:12px;white-space:pre-wrap;font-size:12px">primitive.call({
+  id: "earth.graphcast.forecast",
+  input: { start, horizon, variables },
+  runtime: { accelerator: "GPU" }
+})</pre>
+              <div class="placeholder">Used by: weather-workflow, runtime, coder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>Recommended Lifecycle</h3>
+  <div class="options">
+    <div class="option" data-choice="lifecycle" onclick="toggleSelect(this)">
+      <div class="letter">✓</div>
+      <div class="content">
+        <h3>Resource -> Candidate Primitive -> Reviewed -> Verified -> Callable</h3>
+        <p>Resources are broad catalog entries. Primitives only become callable after a contract exists and validation passes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>What users can add</h3>
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <div class="placeholder">Resource card</div>
+    <div class="placeholder">Primitive draft</div>
+    <div class="placeholder">Adapter script</div>
+    <div class="placeholder">Validation example</div>
+  </div>
+  <p style="color:#526071;margin-top:10px">The product should not turn every resource into a primitive automatically. It should suggest primitive candidates, then require a contract and validation before agents can use them.</p>
+</div>

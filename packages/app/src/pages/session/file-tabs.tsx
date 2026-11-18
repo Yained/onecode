@@ -1,0 +1,608 @@
+import { createEffect, createMemo, createSignal, Match, on, onCleanup, Show, Switch } from "solid-js"
+import { createStore } from "solid-js/store"
+import { Dynamic } from "solid-js/web"
+import { makeEventListener } from "@solid-primitives/event-listener"
+import type { FileSearchHandle } from "@opencode-ai/ui/file"
+import { useFileComponent } from "@opencode-ai/ui/context/file"
+import { cloneSelectedLineRange, previewSelectedLines } from "@opencode-ai/ui/pierre/selection-bridge"
+import { createLineCommentController } from "@opencode-ai/ui/line-comment-annotations"
+import { sampledChecksum } from "@opencode-ai/core/util/encode"
+import { DropdownMenu } from "@opencode-ai/ui/dropdown-menu"
+import { Button } from "@opencode-ai/ui/button"
+import { IconButton } from "@opencode-ai/ui/icon-button"
+import { ScrollView } from "@opencode-ai/ui/scroll-view"
+import { showToast } from "@opencode-ai/ui/toast"
+import {
+  CsvFilePreview,
+  HtmlFilePreview,
+  isCsvPath,
+  isHtmlPath,
+  isMarkdownPath,
+  isPdfPath,
+  isXyzPath,
+  MarkdownFilePreview,
+  PdfFilePreview,
+  XyzFilePreview,
+} from "@/components/file-preview"
+import { selectionFromLines, useFile, type FileSelection, type SelectedLineRange } from "@/context/file"
+import { useComments } from "@/context/comments"
+import { useLanguage } from "@/context/language"
+import { usePrompt } from "@/context/prompt"
+import { useSDK } from "@/context/sdk"
+import { useServer } from "@/context/server"
+import { resolveHtmlPreviewUrl } from "@/utils/html-preview-url"
+import { getSessionHandoff } from "@/pages/session/handoff"
+import { useSessionLayout } from "@/pages/session/session-layout"
+import { createSessionTabs } from "@/pages/session/helpers"
+
+function FileCommentMenu(props: {
+  moreLabel: string
+  editLabel: string
+  deleteLabel: string
+  onEdit: VoidFunction
+  onDelete: VoidFunction
+}) {
+  return (
+    <div onMouseDown={(event) => event.stopPropagation()} onClick={(event) => event.stopPropagation()}>
+      <DropdownMenu gutter={4} placement="bottom-end">
+        <DropdownMenu.Trigger
+          as={IconButton}
+          icon="dot-grid"
+          variant="ghost"
+          size="small"
+          class="size-6 rounded-md"
+          aria-label={props.moreLabel}
+        />
+        <DropdownMenu.Portal>
+          <DropdownMenu.Content>
+            <DropdownMenu.Item onSelect={props.onEdit}>
+              <DropdownMenu.ItemLabel>{props.editLabel}</DropdownMenu.ItemLabel>
+            </DropdownMenu.Item>
+            <DropdownMenu.Item onSelect={props.onDelete}>
+              <DropdownMenu.ItemLabel>{props.deleteLabel}</DropdownMenu.ItemLabel>
+            </DropdownMenu.Item>
+          </DropdownMenu.Content>
+        </DropdownMenu.Portal>
+      </DropdownMenu>
+    </div>
+  )
+}
+
+type ScrollPos = { x: number; y: number }
+
+function createScrollSync(input: { tab: () => string; view: ReturnType<typeof useSessionLayout>["view"] }) {
+  let scroll: HTMLDivElement | undefined
+  let scrollFrame: number | undefined
+  let restoreFrame: number | undefined
+  let pending: ScrollPos | undefined
+  const [code, setCode] = createSignal<HTMLElement[]>([])
+
+  const getCode = () => {
+    const el = scroll
+    if (!el) return []
+
+    const host = el.querySelector("diffs-container")
+    if (!(host instanceof HTMLElement)) return []
+
+    const root = host.shadowRoot
+    if (!root) return []
+
+    return Array.from(root.querySelectorAll("[data-code]")).filter(
+      (node): node is HTMLElement => node instanceof HTMLElement && node.clientWidth > 0,
+    )
+  }
+
+  const save = (next: ScrollPos) => {
+    pending = next
+    if (scrollFrame !== undefined) return
+
+    scrollFrame = requestAnimationFrame(() => {
+      scrollFrame = undefined
+
+      const out = pending
+      pending = undefined
+      if (!out) return
+
+      input.view().setScroll(input.tab(), out)
+    })
+  }
+
+  const onCodeScroll = (event: Event) => {
+    const el = scroll
+    if (!el) return
+
+    const target = event.currentTarget
+    if (!(target instanceof HTMLElement)) return
+
+    save({
+      x: target.scrollLeft,
+      y: el.scrollTop,
+    })
+  }
+
+  const sync = () => {
+    const next = getCode()
+    const current = code()
+    if (next.length === current.length && next.every((el, i) => el === current[i])) return
+    setCode(next)
+  }
+
+  const restore = () => {
+    const el = scroll
+    if (!el) return
+
+    const pos = input.view().scroll(input.tab())
+    if (!pos) return
+
+    sync()
+
+    if (code().length > 0) {
+      for (const item of code()) {
+        if (item.scrollLeft !== pos.x) item.scrollLeft = pos.x
+      }
+    }
+
+    if (el.scrollTop !== pos.y) el.scrollTop = pos.y
+    if (code().length > 0) return
+    if (el.scrollLeft !== pos.x) el.scrollLeft = pos.x
+  }
+
+  const queueRestore = () => {
+    if (restoreFrame !== undefined) return
+
+    restoreFrame = requestAnimationFrame(() => {
+      restoreFrame = undefined
+      restore()
+    })
+  }
+
+  const handleScroll = (event: Event & { currentTarget: HTMLDivElement }) => {
+    if (code().length === 0) sync()
+
+    save({
+      x: code()[0]?.scrollLeft ?? event.currentTarget.scrollLeft,
+      y: event.currentTarget.scrollTop,
+    })
+  }
+
+  createEffect(() => {
+    for (const item of code()) makeEventListener(item, "scroll", onCodeScroll)
+  })
+
+  const setViewport = (el: HTMLDivElement) => {
+    scroll = el
+    restore()
+  }
+
+  onCleanup(() => {
+    if (scrollFrame !== undefined) cancelAnimationFrame(scrollFrame)
+    if (restoreFrame !== undefined) cancelAnimationFrame(restoreFrame)
+  })
+
+  return {
+    handleScroll,
+    queueRestore,
+    setViewport,
+  }
+}
+
+function EditableFileBody(props: {
+  path: () => string | undefined
+  contents: () => string
+  loaded: () => boolean
+}) {
+  const file = useFile()
+  const language = useLanguage()
+  const [draft, setDraft] = createSignal("")
+  const [dirty, setDirty] = createSignal(false)
+  const [saving, setSaving] = createSignal(false)
+  let textarea: HTMLTextAreaElement | undefined
+
+  createEffect(
+    on(
+      props.path,
+      () => {
+        setDirty(false)
+        setDraft(props.loaded() ? props.contents() : "")
+      },
+      { defer: false },
+    ),
+  )
+
+  createEffect(() => {
+    if (!props.loaded() || dirty()) return
+    setDraft(props.contents())
+  })
+
+  const save = async () => {
+    const path = props.path()
+    if (!path || saving() || !dirty()) return
+    setSaving(true)
+    try {
+      await file.write(path, draft())
+      setDirty(false)
+    } finally {
+      setSaving(false)
+    }
+  }
+
+  createEffect(() => {
+    if (typeof window === "undefined") return
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!(event.metaKey || event.ctrlKey) || event.key.toLowerCase() !== "s") return
+      if (!textarea?.contains(document.activeElement) && document.activeElement !== textarea) return
+      event.preventDefault()
+      void save()
+    }
+    makeEventListener(window, "keydown", onKeyDown)
+  })
+
+  return (
+    <div class="flex flex-col h-full min-h-0">
+      <div class="flex items-center justify-end gap-2 px-4 py-2 border-b border-border-weaker-base shrink-0">
+        <Show when={dirty()}>
+          <div class="text-11-regular text-text-weak mr-auto">{language.t("session.file.unsaved")}</div>
+        </Show>
+        <Button type="button" size="small" variant="secondary" disabled={!dirty() || saving()} onClick={() => void save()}>
+          {saving() ? language.t("common.saving") : language.t("common.save")}
+        </Button>
+      </div>
+      <textarea
+        ref={textarea}
+        class="flex-1 min-h-0 w-full resize-none bg-background-base px-4 py-3 text-13-regular text-text-strong font-mono outline-none border-0"
+        onInput={(event) => {
+          setDraft(event.currentTarget.value)
+          setDirty(true)
+        }}
+        spellcheck={false}
+        autocapitalize="off"
+        autocomplete="off"
+        autocorrect="off"
+      >
+        {draft()}
+      </textarea>
+    </div>
+  )
+}
+
+export function FileTabContent(props: { tab: string }) {
+  const file = useFile()
+  const comments = useComments()
+  const language = useLanguage()
+  const prompt = usePrompt()
+  const sdk = useSDK()
+  const server = useServer()
+  const fileComponent = useFileComponent()
+  const { sessionKey, tabs, view } = useSessionLayout()
+  const activeFileTab = createSessionTabs({
+    tabs,
+    pathFromTab: file.pathFromTab,
+    normalizeTab: (tab) => (tab.startsWith("file://") ? file.tab(tab) : tab),
+  }).activeFileTab
+
+  let find: FileSearchHandle | null = null
+
+  const search = {
+    register: (handle: FileSearchHandle | null) => {
+      find = handle
+    },
+  }
+
+  const path = createMemo(() => file.pathFromTab(props.tab))
+  const state = createMemo(() => {
+    const p = path()
+    if (!p) return
+    return file.get(p)
+  })
+  const loadHtmlPreviewUrl = (filePath: string) =>
+    resolveHtmlPreviewUrl({
+      baseUrl: sdk.url,
+      directory: sdk.directory,
+      filePath,
+      username: server.current?.http.username,
+      password: server.current?.http.password,
+    })
+
+  createEffect(() => {
+    const p = path()
+    if (!p) return
+    void file.load(p)
+  })
+  const contents = createMemo(() => state()?.content?.content ?? "")
+  const isEditableText = createMemo(() => {
+    const current = state()
+    if (!current?.loaded) return false
+    if (current.content?.type !== "text") return false
+    if (current.content.encoding === "base64") return false
+    if (isHtmlPath(path()) || isMarkdownPath(path()) || isCsvPath(path()) || isXyzPath(path()) || isPdfPath(path())) {
+      return false
+    }
+    return true
+  })
+  const cacheKey = createMemo(() => sampledChecksum(contents()))
+  const selectedLines = createMemo<SelectedLineRange | null>(() => {
+    const p = path()
+    if (!p) return null
+    if (file.ready()) return (file.selectedLines(p) as SelectedLineRange | undefined) ?? null
+    return (getSessionHandoff(sessionKey())?.files[p] as SelectedLineRange | undefined) ?? null
+  })
+  const scrollSync = createScrollSync({
+    tab: () => props.tab,
+    view,
+  })
+
+  const selectionPreview = (source: string, selection: FileSelection) => {
+    return previewSelectedLines(source, {
+      start: selection.startLine,
+      end: selection.endLine,
+    })
+  }
+
+  const buildPreview = (filePath: string, selection: FileSelection) => {
+    const source = filePath === path() ? contents() : file.get(filePath)?.content?.content
+    if (!source) return undefined
+    return selectionPreview(source, selection)
+  }
+
+  const addCommentToContext = (input: {
+    file: string
+    selection: SelectedLineRange
+    comment: string
+    preview?: string
+    origin?: "review" | "file"
+  }) => {
+    const selection = selectionFromLines(input.selection)
+    const preview = input.preview ?? buildPreview(input.file, selection)
+
+    const saved = comments.add({
+      file: input.file,
+      selection: input.selection,
+      comment: input.comment,
+    })
+    prompt.context.add({
+      type: "file",
+      path: input.file,
+      selection,
+      comment: input.comment,
+      commentID: saved.id,
+      commentOrigin: input.origin,
+      preview,
+    })
+  }
+
+  const updateCommentInContext = (input: {
+    id: string
+    file: string
+    selection: SelectedLineRange
+    comment: string
+  }) => {
+    comments.update(input.file, input.id, input.comment)
+    const preview = input.file === path() ? buildPreview(input.file, selectionFromLines(input.selection)) : undefined
+    prompt.context.updateComment(input.file, input.id, {
+      comment: input.comment,
+      ...(preview ? { preview } : {}),
+    })
+  }
+
+  const removeCommentFromContext = (input: { id: string; file: string }) => {
+    comments.remove(input.file, input.id)
+    prompt.context.removeComment(input.file, input.id)
+  }
+
+  const fileComments = createMemo(() => {
+    const p = path()
+    if (!p) return []
+    return comments.list(p)
+  })
+
+  const commentedLines = createMemo(() => fileComments().map((comment) => comment.selection))
+
+  const [note, setNote] = createStore({
+    openedComment: null as string | null,
+    commenting: null as SelectedLineRange | null,
+    selected: null as SelectedLineRange | null,
+  })
+
+  const syncSelected = (range: SelectedLineRange | null) => {
+    const p = path()
+    if (!p) return
+    file.setSelectedLines(p, range ? cloneSelectedLineRange(range) : null)
+  }
+
+  const activeSelection = () => note.selected ?? selectedLines()
+
+  const commentsUi = createLineCommentController({
+    comments: fileComments,
+    label: language.t("ui.lineComment.submit"),
+    draftKey: () => path() ?? props.tab,
+    mention: {
+      items: file.searchFilesAndDirectories,
+    },
+    state: {
+      opened: () => note.openedComment,
+      setOpened: (id) => setNote("openedComment", id),
+      selected: () => note.selected,
+      setSelected: (range) => setNote("selected", range),
+      commenting: () => note.commenting,
+      setCommenting: (range) => setNote("commenting", range),
+      syncSelected,
+      hoverSelected: syncSelected,
+    },
+    getHoverSelectedRange: activeSelection,
+    cancelDraftOnCommentToggle: true,
+    clearSelectionOnSelectionEndNull: true,
+    onSubmit: ({ comment, selection }) => {
+      const p = path()
+      if (!p) return
+      addCommentToContext({ file: p, selection, comment, origin: "file" })
+    },
+    onUpdate: ({ id, comment, selection }) => {
+      const p = path()
+      if (!p) return
+      updateCommentInContext({ id, file: p, selection, comment })
+    },
+    onDelete: (comment) => {
+      const p = path()
+      if (!p) return
+      removeCommentFromContext({ id: comment.id, file: p })
+    },
+    editSubmitLabel: language.t("common.save"),
+    renderCommentActions: (_, controls) => (
+      <FileCommentMenu
+        moreLabel={language.t("common.moreOptions")}
+        editLabel={language.t("common.edit")}
+        deleteLabel={language.t("common.delete")}
+        onEdit={controls.edit}
+        onDelete={controls.remove}
+      />
+    ),
+  })
+
+  createEffect(() => {
+    if (typeof window === "undefined") return
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (activeFileTab() !== props.tab) return
+      if (!(event.metaKey || event.ctrlKey) || event.altKey || event.shiftKey) return
+      if (event.key.toLowerCase() !== "f") return
+
+      event.preventDefault()
+      event.stopPropagation()
+      find?.focus()
+    }
+
+    makeEventListener(window, "keydown", onKeyDown, { capture: true })
+  })
+
+  createEffect(
+    on(
+      path,
+      () => {
+        commentsUi.note.reset()
+      },
+      { defer: true },
+    ),
+  )
+
+  createEffect(() => {
+    const focus = comments.focus()
+    const p = path()
+    if (!focus || !p) return
+    if (focus.file !== p) return
+    if (activeFileTab() !== props.tab) return
+
+    const target = fileComments().find((comment) => comment.id === focus.id)
+    if (!target) return
+
+    commentsUi.note.openComment(target.id, target.selection, { cancelDraft: true })
+    requestAnimationFrame(() => comments.clearFocus())
+  })
+
+  let prev = {
+    loaded: false,
+    ready: false,
+    active: false,
+  }
+
+  createEffect(() => {
+    const loaded = !!state()?.loaded
+    const ready = file.ready()
+    const active = activeFileTab() === props.tab
+    const restore = (loaded && !prev.loaded) || (ready && !prev.ready) || (active && loaded && !prev.active)
+    prev = { loaded, ready, active }
+    if (!restore) return
+    scrollSync.queueRestore()
+  })
+
+  const renderFile = (source: string, opts?: { media?: boolean }) => (
+    <div class="relative overflow-hidden pb-40">
+      <Dynamic
+        component={fileComponent}
+        mode="text"
+        file={{
+          name: path() ?? "",
+          contents: source,
+          cacheKey: cacheKey(),
+        }}
+        enableLineSelection
+        enableHoverUtility
+        selectedLines={activeSelection()}
+        commentedLines={commentedLines()}
+        onRendered={() => {
+          scrollSync.queueRestore()
+        }}
+        annotations={commentsUi.annotations()}
+        renderAnnotation={commentsUi.renderAnnotation}
+        renderHoverUtility={commentsUi.renderHoverUtility}
+        onLineSelected={(range: SelectedLineRange | null) => {
+          commentsUi.onLineSelected(range)
+        }}
+        onLineNumberSelectionEnd={commentsUi.onLineNumberSelectionEnd}
+        onLineSelectionEnd={(range: SelectedLineRange | null) => {
+          commentsUi.onLineSelectionEnd(range)
+        }}
+        search={search}
+        class="select-text"
+        media={
+          opts?.media === false
+            ? { mode: "off" }
+            : {
+                mode: "auto",
+                path: path(),
+                current: state()?.content,
+                loadHtmlPreviewUrl,
+                onLoad: scrollSync.queueRestore,
+                onError: (args: { kind: "image" | "audio" | "svg" | "html" }) => {
+                  if (args.kind !== "svg" && args.kind !== "html") return
+                  showToast({
+                    variant: "error",
+                    title: language.t("toast.file.loadFailed.title"),
+                  })
+                },
+              }
+        }
+      />
+    </div>
+  )
+
+  return (
+    <div class="flex flex-col flex-1 min-h-0 h-full overflow-hidden contain-strict">
+      <Switch>
+        <Match when={state()?.loaded && isHtmlPath(path())}>
+          <HtmlFilePreview path={path} contents={contents} renderSource={(source) => renderFile(source, { media: false })} />
+        </Match>
+        <Match when={state()?.loaded && isMarkdownPath(path())}>
+          <MarkdownFilePreview
+            path={path}
+            contents={contents}
+            renderSource={(source) => renderFile(source, { media: false })}
+          />
+        </Match>
+        <Match when={state()?.loaded && isCsvPath(path())}>
+          <CsvFilePreview path={path} contents={contents} renderSource={(source) => renderFile(source, { media: false })} />
+        </Match>
+        <Match when={state()?.loaded && isPdfPath(path())}>
+          <PdfFilePreview path={path} />
+        </Match>
+        <Match when={state()?.loaded && isXyzPath(path())}>
+          <XyzFilePreview path={path} contents={contents} renderSource={(source) => renderFile(source, { media: false })} />
+        </Match>
+        <Match when={state()?.loaded && isEditableText()}>
+          <EditableFileBody path={path} contents={contents} loaded={() => !!state()?.loaded} />
+        </Match>
+        <Match when={state()?.loaded}>
+          <ScrollView class="h-full" viewportRef={scrollSync.setViewport} onScroll={scrollSync.handleScroll as any}>
+            {renderFile(contents())}
+          </ScrollView>
+        </Match>
+        <Match when={state()?.loading}>
+          <div class="px-6 py-4 text-text-weak">{language.t("common.loading")}...</div>
+        </Match>
+        <Match when={state()?.error}>{(err) => <div class="px-6 py-4 text-text-weak">{err()}</div>}</Match>
+        <Match when={path()}>
+          <div class="px-6 py-4 text-text-weak">{language.t("common.loading")}...</div>
+        </Match>
+      </Switch>
+    </div>
+  )
+}

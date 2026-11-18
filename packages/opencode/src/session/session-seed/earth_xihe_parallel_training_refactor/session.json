@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_131e650f7ffejnFYPuWmd1TBPr",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "nimble-harbor",
+    "directory": "/data/case",
+    "title": "地球科学 · 羲和模型并行训练改造",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1781574250248,
+    "time_updated": 1781575946172,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/case",
+    "agent": "build",
+    "model": "{\"id\":\"deepseek-v4-pro\",\"providerID\":\"deepseek\",\"variant\":\"max\"}",
+    "cost": 0.16457076600000003,
+    "tokens_input": 165874,
+    "tokens_output": 31168,
+    "tokens_reasoning": 21700,
+    "tokens_cache_read": 12805632,
+    "tokens_cache_write": 0
+  }
+]

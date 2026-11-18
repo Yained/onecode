@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ses_090e3ee94ffeOUHq4ZepQ8DKHs",
+    "project_id": "global",
+    "parent_id": null,
+    "slug": "mighty-star",
+    "directory": "/data/case",
+    "title": "材料化学 · 魔搭 MatRIS 下载与推理验证",
+    "version": "1.14.50",
+    "share_url": null,
+    "summary_additions": 0,
+    "summary_deletions": 0,
+    "summary_files": 0,
+    "summary_diffs": null,
+    "revert": null,
+    "permission": null,
+    "time_created": 1784275538283,
+    "time_updated": 1784276133292,
+    "time_compacting": null,
+    "time_archived": null,
+    "workspace_id": null,
+    "path": "root/private_data/matchem",
+    "agent": "build",
+    "model": "{\"id\":\"hy3-free\",\"providerID\":\"opencode\",\"variant\":\"default\"}",
+    "cost": 0.0,
+    "tokens_input": 60364,
+    "tokens_output": 3895,
+    "tokens_reasoning": 0,
+    "tokens_cache_read": 258176,
+    "tokens_cache_write": 0
+  }
+]

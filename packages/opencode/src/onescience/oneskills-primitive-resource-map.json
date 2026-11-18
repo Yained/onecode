@@ -1,0 +1,46 @@
+{
+  "climate/datapipes/era5": {
+    "source_resource_ids": ["seed-datasets-earth-era5"]
+  },
+  "climate/datapipes/cmems": {
+    "source_resource_ids": ["seed-datasets-earth-cmems"]
+  },
+  "cfd/datapipes/cfdbench": {
+    "source_resource_ids": ["seed-datasets-fluid-cfdbench"]
+  },
+  "climate/models/fuxi": {
+    "source_resource_ids": ["seed-models-modelhub-fuxi"],
+    "modelscope_title": "FuXi"
+  },
+  "climate/models/graphcast": {
+    "source_resource_ids": ["seed-models-modelhub"],
+    "modelscope_title": "GraphCast"
+  },
+  "climate/models/fengwu": {
+    "source_resource_ids": ["seed-models-modelhub-fengwu"],
+    "modelscope_title": "FengWu"
+  },
+  "climate/models/pangu": {
+    "source_resource_ids": ["seed-models-modelhub-pangu-weather"],
+    "modelscope_title": "Pangu-Weather"
+  },
+  "climate/models/fourcastnet": {
+    "source_resource_ids": ["seed-models-modelhub-fourcastnet"],
+    "modelscope_title": "FourCastNet"
+  },
+  "climate/models/xihe": {
+    "source_resource_ids": ["seed-models-modelhub-xihe"],
+    "modelscope_title": "XiHe"
+  },
+  "bio/models/alphafold": {
+    "source_resource_ids": ["seed-models-life"]
+  },
+  "bio/models/alphafold3": {
+    "source_resource_ids": ["seed-models-life-alphafold3"],
+    "modelscope_title": "AlphaFold3"
+  },
+  "bio/models/openfold": {
+    "source_resource_ids": ["seed-models-life-openfold"],
+    "modelscope_title": "OpenFold"
+  }
+}

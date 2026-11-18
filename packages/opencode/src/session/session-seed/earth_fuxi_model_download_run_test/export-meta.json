@@ -1,0 +1,16 @@
+{
+  "exportedAt": "2026-06-24T02:38:31Z",
+  "sourceDatabase": "/data/root/data/opencode.db",
+  "sessionId": "ses_12afd8b95ffeFdtfOOORfsnETp",
+  "title": "地球科学 · FuXi 模型下载与运行测试",
+  "directory": "/data/case",
+  "sourceDirectoryFromDb": "/root/private_data/classic_case",
+  "directoryRewrite": "runtime-default",
+  "directoryRewriteNote": "At seed time set session.directory to OneScienceCodeDefaultDirectory.resolve()",
+  "counts": {
+    "messages": 37,
+    "parts": 163,
+    "sessionMessages": 2,
+    "todos": 0
+  }
+}

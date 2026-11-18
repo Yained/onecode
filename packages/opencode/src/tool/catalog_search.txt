@@ -1,0 +1,7 @@
+Search the OneScience knowledge catalog for skills or AI primitives.
+
+Use this when you need to discover datasets, models, apps, capabilities, or skills beyond what is already listed in available_skills.
+
+For primitives, `domain` is optional and must be one of: bio, biology, climate, meteorology, cfd, fluid, matchem, materials, 生命科学, 地球科学, 流体仿真, 材料化学. Prefer omitting `domain` when the query already names the asset. If results are empty, a successful call means domain (when present) was already valid — relax tags/q first; only change domain after that.
+
+After selecting a primitive, use catalog_resolve with part=body to load companions (spec.md / usage.md / workflow_planning.md) before implementing or running. Use part=contract or part=location when you only need the contract shape or paths.
